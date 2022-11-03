@@ -19,6 +19,7 @@ table {
 
 th, td, tr {
   border-width: 2px !important;
+  border-color: #bdc2cb !important;
 }
 
 
