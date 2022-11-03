@@ -13,13 +13,14 @@
 
 
 table {
-    border-collapse: separate !important;
+
     border-spacing: 0 !important;
+    
 }
 
-th, td, tr {
+th, td {
   border-width: 2px !important;
-  border-color: #bdc2cb !important;
+  border-color: #869ab8 !important;
 }
 
 
