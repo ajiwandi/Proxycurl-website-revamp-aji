@@ -10,10 +10,18 @@
   background-position: 50%;
 }
 
+
+
 table {
     border-collapse: separate !important;
     border-spacing: 0 !important;
 }
+
+th, td, tr {
+  border-width: 2px !important;
+}
+
+
 
 .blur{
   -webkit-filter: blur(3px);
