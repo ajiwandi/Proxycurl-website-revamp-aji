@@ -14,13 +14,15 @@
 
 table {
 
-    border-spacing: 0 !important;
+  border-spacing: 0 !important;
+  border-collapse: separate !important;
     
 }
 
 th, td {
-  border-width: 2px !important;
+  border-width: 1px !important;
   border-color: #869ab8 !important;
+
 }
 
 
