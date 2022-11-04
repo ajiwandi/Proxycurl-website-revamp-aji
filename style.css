@@ -115,3 +115,8 @@ pre {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.image-responsive{
+  max-width: 100%;
+  height: auto;
+}
