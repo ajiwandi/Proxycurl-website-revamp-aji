@@ -60,6 +60,10 @@ table tr:last-child td:last-child {
   border-bottom-right-radius: 0.5rem !important;
 }
 
+.font-weight-black{
+  font-weight: 900 !important;
+}
+
 .text-python{
     color: #3FB422;
 }
