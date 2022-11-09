@@ -17,13 +17,13 @@ table {
     border-spacing: 0 !important;
     border-collapse: separate !important;
     border-radius: 0.6rem !important;
-
+    
     
 }
 
 table, th, td {
-  border: solid #869ab8 1px !important;
-
+  border: solid #869ab8 0.5px !important;
+  
 }
 
 
