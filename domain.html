@@ -1,58 +1,60 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Libs CSS -->
-    <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.5.0/css/neu.min.css">    
-    <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
-    <link rel="stylesheet" href="./assets/libs/choices.js/public/assets/styles/choices.min.css">
-    <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
-    <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
-    <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
-    <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
-    <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
-    <link rel="stylesheet" href="./style.css" />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Map -->
-    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+  <!-- Libs CSS -->
+  <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.5.0/css/neu.min.css">
+  <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
+  <link rel="stylesheet" href="./assets/libs/choices.js/public/assets/styles/choices.min.css">
+  <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
+  <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
+  <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
+  <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
+  <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
+  <link rel="stylesheet" href="./style.css" />
 
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="./assets/css/theme.min.css">
+  <!-- Map -->
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
 
-    <title>Domain page</title>
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="./assets/css/theme.min.css">
 
-  </head>
+  <title>Domain page</title>
 
-  <body>
+</head>
 
-    <!--Modal-->
-    <div class="modal fade" id="moreModal" tabindex="-1" role="dialog" aria-labelledby="moreModalLabel" aria-hidden="true">
+<body>
 
-      <div class="modal-dialog modal-dialog-centered" role="document">
+  <!--Modal-->
+  <div class="modal fade" id="moreModal" tabindex="-1" role="dialog" aria-labelledby="moreModalLabel"
+    aria-hidden="true">
 
-        <div class="modal-content">
+    <div class="modal-dialog modal-dialog-centered" role="document">
 
-          <div class="modal-body">
+      <div class="modal-content">
 
-            <h2 class="font-weight-bold h3">
-              Get the list of employees for Google
-            </h2>
+        <div class="modal-body">
 
-            <p class="text-muted mb-6">
-              Proxycurl is a developer's tool to integrate People/Company related data into their applcations
-            </p>
+          <h2 class="font-weight-bold h3">
+            Get the details of nubela.co
+          </h2>
 
-            <div class="highlight-block">
-              <div class="d-flex">
-                <span style="width: 10px; height: 10px;" class="bg-danger rounded-circle"></span>
-                <span style="width: 10px; height: 10px;" class="bg-warning rounded-circle ml-1"></span>
-                <span style="width: 10px; height: 10px;" class="bg-success rounded-circle ml-1"></span>
-              </div>
+          <p class="text-muted mb-6">
+            Proxycurl is a developer's tool to integrate People/Company related data into their applcations
+          </p>
+
+          <div class="highlight-block">
+            <div class="d-flex">
+              <span style="width: 10px; height: 10px;" class="bg-danger rounded-circle"></span>
+              <span style="width: 10px; height: 10px;" class="bg-warning rounded-circle ml-1"></span>
+              <span style="width: 10px; height: 10px;" class="bg-success rounded-circle ml-1"></span>
+            </div>
             <pre><code class="language-python">
 <span class="text-hl">import</span> requests
 api_endpoint = <span class="text-python-hl">'https://nubela.co/proxycurl/api'</span>
@@ -64,16 +66,14 @@ response = requests.get(api_endpoint,
                 headers=header_dic)
 </code>
 </pre>
-            </div>
-
           </div>
 
-          <div class="modal-footer py-4">
+        </div>
 
-            <button type="button" class="btn btn-secondary-soft mr-2" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Get API Key and run code</button>
-            
-          </div>
+        <div class="modal-footer py-4">
+
+          <button type="button" class="btn btn-secondary-soft mr-2" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Get API Key and run code</button>
 
         </div>
 
@@ -81,486 +81,610 @@ response = requests.get(api_endpoint,
 
     </div>
 
-     <!-- NAVBAR
-    ================================================== -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
-      <div class="container-fluid">
+  </div>
 
-        <!-- Brand -->
-        <a class="navbar-brand" href="index.html">
-          <img src="./assets/img/Proxycurl-Logotype-Primary@1x.png" class="navbar-brand-img" alt="proxycurl logo">
-        </a>
+  <!-- Modal disposable/spam-->
+  <div class="modal fade" id="disposablespam" tabindex="-1" role="dialog" aria-labelledby="disposablespamLabel"
+    aria-hidden="true">
 
-        <!-- Toggler -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="modal-dialog modal-dialog-centered" role="document">
 
-        <!-- Collapse -->
-        <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="modal-content">
 
-          <!-- Toggler -->
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fe fe-x"></i>
-          </button>
+        <div class="modal-body">
 
-          <!-- Navigation -->
-          <ul class="navbar-nav ml-auto">
+          <p class="text-gray-700 h3">
+            Is it a disposable / spam domain?
+          </p>
 
-            <!-- Products -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarPages" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
-                Products <i class="fe fe-chevron-down"></i>
-              </a>
-              <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarPages">
-                <div class="row no-gutters">
-                  <div class="col-12">
-                    <div class="row g-0">
+          <h2 class="font-weight-bold mb-6">
+            Normal
+          </h2>
 
-                      <div class="col-12 col-lg-6 pl-4">
+          <!-- Code block -->
+          <div class="highlight-block">
 
-                        <!-- Heading -->
-                        <h6 class="dropdown-header">
-                          <img class="icon" width="24" alt="database icon" src="assets/img/logos/database icon.svg"> LinkDB
-                        </h6>
+            <!-- Controls -->
+            <div class="d-flex">
+              <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+              <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+              <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+            </div>
 
-                        <!-- List -->
-                        <a class="dropdown-item mb-5" href="linkdb.html">
-                          Database of public<br>
-                          LinkedIn profiles
-                        </a>
-
-                        <!-- Heading -->
-                        <h6 class="dropdown-header">
-                          <img class="icon" width="24" alt="emoji icon" src="assets/img/logos/emoji smiley.svg"> Freebies
-                        </h6>
-
-                        <!-- List -->
-                        <a class="dropdown-item mb-5 mb-lg-0" href="disposable-email.html">
-                          Disposable Email Checker
-                        </a>
-
-                      </div>
-
-                      <div class="col-12 col-lg-6">
-
-                        <!-- Heading -->
-                        <h6 class="dropdown-header">
-                          <img class="icon" width="24" alt="Proxycurl logo" src="assets/img/logos/proxycurl logo blue.svg"> Proxycurl API
-                        </h6>
-
-                        <!-- List -->
-                        <a class="dropdown-item" href="#!">
-                          LinkedIn Person Profile API
-                        </a>
-                        <a class="dropdown-item" href="#!">
-                          LinkedIn Company Profile API
-                        </a>
-                        <a class="dropdown-item" href="#!">
-                          Work Email Lookup API
-                        </a>
-                        <a class="dropdown-item" href="#!">
-                          Employee Listing API
-                        </a>
-                        <a class="dropdown-item" href="#!">
-                          Reverse Email Lookup API
-                        </a>
-                        <a class="dropdown-item" href="employee-search-api.html">
-                          Employee Search API Endpoint
-                        </a>
-                        <a class="dropdown-item" href="contact-api.html">
-                          Contact API Endpoint
-                        </a>
-                        <a class="dropdown-item" href="jobs-api.html">
-                          Jobs API Endpoint
-                        </a>
-                        <a class="dropdown-item mb-5" href="#!">
-                          API Documentation
-                        </a>
-
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div> <!-- / .row -->
-            </li>
-
-            <!-- Pricing -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarAccount" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
-                Pricing <i class="fe fe-chevron-down"></i>
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarAccount">
-                <li class="dropdown-item dropright">
-                  <a class="dropdown-link" href="dwarf-forms-pricing.html">
-                    Dwarf Forms Pricing Plan
-                  </a>
-                </li>
-                <li class="dropdown-item dropright">
-                  <a class="dropdown-link" href="pricing.html">
-                    Proxycurl API Pricing Plans
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <!-- Solution -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarAccount" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
-                Solutions <i class="fe fe-chevron-down"></i>
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarAccount">
-
-                <!-- Heading -->
-                <h6 class="dropdown-header">
-                  <img class="icon" width="24" alt="Dwarf Forms logo" src="assets/img/logos/solutions.svg"> Solutions
-                </h6>   
-
-                <li class="dropdown-item dropright">
-                  <a class="dropdown-link" href="#!">
-                    Accelerating growth-stage startups
-                  </a>
-                </li>
-                <li class="dropdown-item dropright">
-                  <a class="dropdown-link" href="#!">
-                    Sales and Marketing automation
-                  </a>
-                </li>
-                <li class="dropdown-item dropright">
-                  <a class="dropdown-link" href="#!">
-                    Investment signals
-                  </a>
-                </li>
-                <li class="dropdown-item dropright">
-                  <a class="dropdown-link" href="#!">
-                    Talent identification
-                  </a>
-                </li>
-                <li class="dropdown-item dropright">
-                  <a class="dropdown-link" href="#!">
-                    Clearbit alternative
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <!-- FAQ -->
-            <li class="nav-item">
-              <a class="nav-link" id="navbarAccount" href="#!">
-                FAQ
-              </a>
-            </li>
-
-            <!-- Blog -->
-            <li class="nav-item">
-              <a class="nav-link" id="navbarAccount" href="#!">
-                Blog
-              </a>
-            </li>
-
-          </ul>
-
-          <div class="text-center ml-auto">
-            <!-- Button -->
-            <a class="btn btn-sm btn-link" href="login.html">
-              Log in
-            </a>
+            <pre>
+                  <code class="language-python">
+<span class="text-muted">$</span> curl...</code></pre>
           </div>
 
-          <!-- Button -->
-          <a class="navbar-btn btn btn-sm btn-primary lift" href="register.html">
-            Sign up
-          </a>
+          <!--arrow-->
+          <div class="text-center mt-n2">
+            <span class="badge badge-lg badge-rounded-circle bg-success text-white">
+              <i class="fe fe-arrow-down"></i>
+            </span>
+          </div>
+
+          <div class="highlight-block mt-n2 ">
+
+            <!-- Controls -->
+            <div class="d-flex">
+              <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+              <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+              <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+            </div>
+
+            <pre>
+                  <code class="language-python">
+{
+  <span class="text-info">"is_disposable"</span>: <span class="text-success">false</span>,
+  <span class="text-info">"is_spam_domain"</span>: <span class="text-success">false</span>
+}</code></pre>
+          </div>
+
+        </div>
+
+        <div class="modal-footer py-4">
+
+          <button type="button" class="btn btn-secondary-soft mr-2" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Get API Key and run code</button>
 
         </div>
 
       </div>
-    </nav>
 
-    <!-- COMPANY DIRECTORY
+    </div>
+
+  </div>
+
+  <!-- Modal Type of email-->
+  <div class="modal fade" id="typeofemail" tabindex="-1" role="dialog" aria-labelledby="typeofemailLabel"
+    aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered" role="document">
+
+      <div class="modal-content">
+
+        <div class="modal-body">
+
+          <p class="text-gray-700 h3">
+            Type of email domain
+          </p>
+
+          <h2 class="font-weight-bold mb-6">
+            Work email
+          </h2>
+
+          <!-- Code block -->
+          <div class="highlight-block">
+
+            <!-- Controls -->
+            <div class="d-flex">
+              <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+              <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+              <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+            </div>
+
+            <pre>
+                  <code class="language-python">
+<span class="text-muted">$</span> curl...</code></pre>
+          </div>
+
+          <!--arrow-->
+          <div class="text-center mt-n2">
+            <span class="badge badge-lg badge-rounded-circle bg-success text-white">
+              <i class="fe fe-arrow-down"></i>
+            </span>
+          </div>
+
+          <div class="highlight-block mt-n2 ">
+
+            <!-- Controls -->
+            <div class="d-flex">
+              <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+              <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+              <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+            </div>
+
+            <pre>
+                  <code class="language-python">
+{
+  <span class="text-info">"is_disposable"</span>: <span class="text-success">false</span>,
+  <span class="text-info">"is_spam_domain"</span>: <span class="text-success">false</span>
+}</code></pre>
+          </div>
+
+        </div>
+
+        <div class="modal-footer py-4">
+
+          <button type="button" class="btn btn-secondary-soft mr-2" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Get API Key and run code</button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- LinkedIn associated-->
+  <div class="modal fade" id="linkedinassociated" tabindex="-1" role="dialog" aria-labelledby="linkedinassociatedLabel"
+    aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered" role="document">
+
+      <div class="modal-content">
+
+        <div class="modal-body">
+
+          <p class="text-gray-700 h3">
+            Associated with LinkedIn Company Profile
+          </p>
+
+          <h2 class="font-weight-bold mb-6">
+            Yes
+          </h2>
+
+          <!-- Code block -->
+          <div class="highlight-block">
+
+            <!-- Controls -->
+            <div class="d-flex">
+              <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+              <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+              <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+            </div>
+
+            <pre>
+                  <code class="language-python">
+<span class="text-muted">$</span> curl...</code></pre>
+          </div>
+
+          <!--arrow-->
+          <div class="text-center mt-n2">
+            <span class="badge badge-lg badge-rounded-circle bg-success text-white">
+              <i class="fe fe-arrow-down"></i>
+            </span>
+          </div>
+
+          <div class="highlight-block mt-n2 ">
+
+            <!-- Controls -->
+            <div class="d-flex">
+              <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+              <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+              <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+            </div>
+
+            <pre>
+                  <code class="language-python">
+{
+  <span class="text-info">"is_disposable"</span>: <span class="text-success">false</span>,
+  <span class="text-info">"is_spam_domain"</span>: <span class="text-success">false</span>
+}</code></pre>
+          </div>
+
+        </div>
+
+        <div class="modal-footer py-4">
+
+          <button type="button" class="btn btn-secondary-soft mr-2" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Get API Key and run code</button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- employee count-->
+  <div class="modal fade" id="employeecount" tabindex="-1" role="dialog" aria-labelledby="employeecountLabel"
+    aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered" role="document">
+
+      <div class="modal-content">
+
+        <div class="modal-body">
+
+          <p class="text-gray-700 h3">
+            Employee count
+          </p>
+
+          <h2 class="font-weight-bold mb-6">
+            -
+          </h2>
+
+          <!-- Code block -->
+          <div class="highlight-block">
+
+            <!-- Controls -->
+            <div class="d-flex">
+              <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+              <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+              <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+            </div>
+
+            <pre>
+                  <code class="language-python">
+<span class="text-muted">$</span> curl...</code></pre>
+          </div>
+
+          <!--arrow-->
+          <div class="text-center mt-n2">
+            <span class="badge badge-lg badge-rounded-circle bg-success text-white">
+              <i class="fe fe-arrow-down"></i>
+            </span>
+          </div>
+
+          <div class="highlight-block mt-n2 ">
+
+            <!-- Controls -->
+            <div class="d-flex">
+              <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+              <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+              <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+            </div>
+
+            <pre>
+                  <code class="language-python">
+{
+  <span class="text-info">"is_disposable"</span>: <span class="text-success">false</span>,
+  <span class="text-info">"is_spam_domain"</span>: <span class="text-success">false</span>
+}</code></pre>
+          </div>
+
+        </div>
+
+        <div class="modal-footer py-4">
+
+          <button type="button" class="btn btn-secondary-soft mr-2" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Get API Key and run code</button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- NAVBAR
     ================================================== -->
-    <section class="pt-8 pb-8 bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container-fluid">
 
-      <div class="container">
+      <!-- Brand -->
+      <a class="navbar-brand" href="index.html">
+        <img src="./assets/img/Proxycurl-Logotype-Primary@1x.png" class="navbar-brand-img" alt="proxycurl logo">
+      </a>
 
-        <div class="row justify-content-center align-items-top mb-4">
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-          <!--Company-->
-          <div class="col-12 col-lg-8 text-center text-md-left">
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
 
-            <div class="card shadow-light-lg">
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fe fe-x"></i>
+        </button>
 
-              <div class="card-body">
-                
-                <!--Company name and logo-->
-                <div class="d-flex align-items-center">
-                  <div class="mr-2">
-                    <img class="rounded-circle" width="112" alt="google logo" src="assets/img/logos/proxycurl logo blue.svg">
-                  </div>
-    
-                  <h1 class="display-3 font-weight-bold mb-0">
-                    nubela.co
-                  </h1>
-                </div>
+        <!-- Navigation -->
+        <ul class="navbar-nav ml-auto">
 
-                <!--Company description-->
-                <div class="mt-4">
-    
-                  <div class="row align-items-top mb-4">
+          <!-- Products -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarPages" data-toggle="dropdown" href="#" aria-haspopup="true"
+              aria-expanded="false">
+              Products <i class="fe fe-chevron-down"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarPages">
+              <div class="row no-gutters">
+                <div class="col-12">
+                  <div class="row g-0">
 
-                    <div class="col-12">
-                      <h3 class="h6 font-weight-bold text-uppercase mb-0">
-                        About
-                      </h3>
-      
-                      <p class="text-muted">
-                        Proxycurl has always been a revenue generating product for us, and in 2020, we launched Proxycurl's Linkedin API so product teams do not need to manage a dedicated web scraping team to power
+                    <div class="col-12 col-lg-6 pl-4">
 
-                        <a type="button" class="text-black font-weight-bold" data-toggle="modal" data-target="#moreModal">
-                          ...more
-                        </a>
+                      <!-- Heading -->
+                      <h6 class="dropdown-header">
+                        <img class="icon" width="24" alt="database icon" src="assets/img/logos/database icon.svg">
+                        LinkDB
+                      </h6>
 
-                      </p>
-                    </div>
-      
-                  </div>
-      
-      
-                  <div class="row align-items-top mb-4">
-      
-                    <div class="col-11">
-                      <h3 class="h6 font-weight-bold text-uppercase mb-0">
-                        Main Industries
-                      </h3>
-      
-                      <p class="text-info">
-                        Software Development
-                      </p>
-                    </div>
-      
-                  </div>
-      
-      
-                  <div class="row align-items-top mb-6">
-      
-                    <div class="col-11">
-                      <h3 class="h6 font-weight-bold text-uppercase mb-0">
-                        Country
-                      </h3>
-      
-                      <a class="text-info" href="#!">
-                        United States
+                      <!-- List -->
+                      <a class="dropdown-item mb-5" href="linkdb.html">
+                        Database of public<br>
+                        LinkedIn profiles
                       </a>
+
+                      <!-- Heading -->
+                      <h6 class="dropdown-header">
+                        <img class="icon" width="24" alt="emoji icon" src="assets/img/logos/emoji smiley.svg"> Freebies
+                      </h6>
+
+                      <!-- List -->
+                      <a class="dropdown-item mb-5 mb-lg-0" href="disposable-email.html">
+                        Disposable Email Checker
+                      </a>
+
                     </div>
-      
-                  </div>
-    
-                </div>
 
+                    <div class="col-12 col-lg-6">
+
+                      <!-- Heading -->
+                      <h6 class="dropdown-header">
+                        <img class="icon" width="24" alt="Proxycurl logo"
+                          src="assets/img/logos/proxycurl logo blue.svg"> Proxycurl API
+                      </h6>
+
+                      <!-- List -->
+                      <a class="dropdown-item" href="#!">
+                        LinkedIn Person Profile API
+                      </a>
+                      <a class="dropdown-item" href="#!">
+                        LinkedIn Company Profile API
+                      </a>
+                      <a class="dropdown-item" href="#!">
+                        Work Email Lookup API
+                      </a>
+                      <a class="dropdown-item" href="#!">
+                        Employee Listing API
+                      </a>
+                      <a class="dropdown-item" href="#!">
+                        Reverse Email Lookup API
+                      </a>
+                      <a class="dropdown-item" href="employee-search-api.html">
+                        Employee Search API Endpoint
+                      </a>
+                      <a class="dropdown-item" href="contact-api.html">
+                        Contact API Endpoint
+                      </a>
+                      <a class="dropdown-item" href="jobs-api.html">
+                        Jobs API Endpoint
+                      </a>
+                      <a class="dropdown-item mb-5" href="#!">
+                        API Documentation
+                      </a>
+
+                    </div>
+
+                  </div>
+                </div>
               </div>
+            </div> <!-- / .row -->
+          </li>
 
-            </div>
+          <!-- Pricing -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarAccount" data-toggle="dropdown" href="#" aria-haspopup="true"
+              aria-expanded="false">
+              Pricing <i class="fe fe-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarAccount">
+              <li class="dropdown-item dropright">
+                <a class="dropdown-link" href="dwarf-forms-pricing.html">
+                  Dwarf Forms Pricing Plan
+                </a>
+              </li>
+              <li class="dropdown-item dropright">
+                <a class="dropdown-link" href="pricing.html">
+                  Proxycurl API Pricing Plans
+                </a>
+              </li>
+            </ul>
+          </li>
 
-          </div>
+          <!-- Solution -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarAccount" data-toggle="dropdown" href="#" aria-haspopup="true"
+              aria-expanded="false">
+              Solutions <i class="fe fe-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarAccount">
 
-          <!--Similar companies-->
-          <div class="col-12 col-md-4 d-flex">
+              <!-- Heading -->
+              <h6 class="dropdown-header">
+                <img class="icon" width="24" alt="Dwarf Forms logo" src="assets/img/logos/solutions.svg"> Solutions
+              </h6>
 
-            <div class="card shadow-light-lg">
+              <li class="dropdown-item dropright">
+                <a class="dropdown-link" href="#!">
+                  Accelerating growth-stage startups
+                </a>
+              </li>
+              <li class="dropdown-item dropright">
+                <a class="dropdown-link" href="#!">
+                  Sales and Marketing automation
+                </a>
+              </li>
+              <li class="dropdown-item dropright">
+                <a class="dropdown-link" href="#!">
+                  Investment signals
+                </a>
+              </li>
+              <li class="dropdown-item dropright">
+                <a class="dropdown-link" href="#!">
+                  Talent identification
+                </a>
+              </li>
+              <li class="dropdown-item dropright">
+                <a class="dropdown-link" href="#!">
+                  Clearbit alternative
+                </a>
+              </li>
+            </ul>
+          </li>
 
-              <div class="card-header">
-                <h2 class="lead font-weight-bold pb-0 mb-0">
-                  Similar Domains
-                </h2>
-              </div>
+          <!-- FAQ -->
+          <li class="nav-item">
+            <a class="nav-link" id="navbarAccount" href="#!">
+              FAQ
+            </a>
+          </li>
 
-              <div class="card-body">
+          <!-- Blog -->
+          <li class="nav-item">
+            <a class="nav-link" id="navbarAccount" href="#!">
+              Blog
+            </a>
+          </li>
 
-                <div class="row align-items-top">
-                  <div class="col-12 col-md-3">
-                    <img class="rounded-circle" width="48" src="assets/img/logos/coresignal.png" alt="coresignal logo">
-                  </div>
+        </ul>
 
-                  <div class="col-12 col-md-9">
-                    <a class="font-weight-bold text-primary" href="#!" target="_blank">
-                      coresignal.com
-                    </a>
-                    <p class="text-truncate text-muted">
-                      Software Development
-                  </div>
-                </div>
-                
-                <div class="row align-items-top">
-                  <div class="col-12 col-md-3">
-                    <img class="rounded-circle" width="48" src="assets/img/logos/Brightdata.png" alt="brightdata logo">
-                  </div>
+        <div class="text-center ml-auto">
+          <!-- Button -->
+          <a class="btn btn-sm btn-link" href="login.html">
+            Log in
+          </a>
+        </div>
 
-                  <div class="col-12 col-md-9">
-                    <a class="font-weight-bold text-primary" href="#!" target="_blank">
-                      brightdata.com
-                    </a>
-                    <p class="text-truncate text-muted">
-                      Software Development
-                  </div>
-                </div>
+        <!-- Button -->
+        <a class="navbar-btn btn btn-sm btn-primary lift" href="register.html">
+          Sign up
+        </a>
 
-                <div class="row align-items-top">
-                  <div class="col-12 col-md-3">
-                    <img class="rounded-circle" width="48" src="assets/img/logos/phantombuster.png" alt="phantombuster logo">
-                  </div>
+      </div>
 
-                  <div class="col-12 col-md-9">
-                    <a class="font-weight-bold text-primary" href="#!" target="_blank">
-                      phantombusters.com
-                    </a>
-                    <p class="text-truncate text-muted">
-                      Software Development
-                  </div>
-                </div>
+    </div>
+  </nav>
 
-                <div class="row align-items-top">
-                  <div class="col-12 col-md-3">
-                    <img class="rounded-circle" width="48" src="assets/img/logos/pdl.png" alt="peopledatalabs logo">
-                  </div>
-
-                  <div class="col-12 col-md-9">
-                    <a class="font-weight-bold text-primary" href="#!" target="_blank">
-                      peopledatalabs.com
-                    </a>
-                    <p class="text-truncate text-muted">
-                      Software Development
-                  </div>
-                </div>
-
-                
-                
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div> <!-- / .row -->
-
-      </div> <!-- / .container -->
-
-    </section>
-
-    <!-- TABS
+  <!-- COMPANY DIRECTORY
     ================================================== -->
-    <section class="pt-8 pt-md-11 pb-8 bg-light border-bottom">
+  <section class="pt-8 pb-8 bg-light">
 
-      <div class="container">
+    <div class="container">
 
-        <div class="row align-items-top">
+      <div class="row justify-content-center align-items-top mb-4">
 
-          <div class="col-12 col-md-7 mb-6">
+        <!--Company-->
+        <div class="col-12 col-lg-8 text-md-left mb-8 mb-md-0">
 
-            <h3 class="font-weight-bold"> Domain details</h3>
+          <div class="card shadow-light-lg">
 
-            <div class="tab-content" id="myTabContent">
+            <div class="card-body">
 
-              <!--Profile Details-->
-              <div class="tab-pane show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+              <!--Company domain and logo-->
+              <div class="row align-items-top mb-6">
 
-                <div class="mt-5">
+                <div class="col-12">
+                  <h3 class="h6 font-weight-bold text-uppercase mb-0">
+                    Domain
+                  </h3>
 
-                  <!--Website-->
-                  <div class="row align-items-top mb-6">
+                  <fieldset class="border border-3 border-muted rounded bg-light mt-1"
+                    style="border-width: 2px !important;">
 
-                    <div class="col-1 d-none d-sm-block">
-                      <span class="neu-globe text-gray-700" style="font-size: 24px;"></span>
+                    <div class="row mt-1">
+
+
+                      <div class="ml-5 mr-2">
+                        <img class="rounded-circle" width="36" alt="google logo"
+                          src="assets/img/logos/proxycurl logo blue.svg">
+                      </div>
+
+                      <h5 class="font-weight-bold mt-1 text-muted">
+                        https://<span class="text-info">nubela.co</span>/
+                      </h5>
+
                     </div>
-      
-                    <div class="col-11">
-                      <h3 class="h6 font-weight-bold text-uppercase mb-0">
-                        Website
-                      </h3>
-      
-                      <a class="text-primary" href="https://nubela.co" target="_blank">
-                        https://nubela.co
+                  </fieldset>
+                </div>
+
+              </div>
+
+
+              <!--Company description-->
+              <div class="mt-4">
+
+                <div class="row align-items-top mb-4">
+
+                  <div class="col-12">
+                    <h3 class="h6 font-weight-bold text-uppercase mb-0">
+                      About
+                    </h3>
+
+                    <p class="text-muted">
+                      Proxycurl has always been a revenue generating product for us, and in 2020, we launched
+                      Proxycurl's Linkedin API so product teams do not need to manage a dedicated web scraping team to
+                      power
+
+                      <a type="button" class="text-black font-weight-bold" data-toggle="modal" data-target="#moreModal">
+                        ...more
                       </a>
-                    </div>
-      
+
+                    </p>
                   </div>
 
-                  <!--Industry-->
-                  <div class="row align-items-top mb-4">
+                </div>
 
-                    <div class="col-1 d-none d-sm-block">
-                      <span class="neu-delete text-gray-700" style="font-size: 24px;"></span>
-                    </div>
-      
-                    <div class="col-11">
-                      <h3 class="h6 font-weight-bold text-uppercase mb-0">
-                        Is it a disposable/spam domain?
-                      </h3>
-      
-                      <p class="text-gray-700">
-                        Normal <a class="badge rounded-pill badge-primary-soft ml-1" href="#">Get details</a>
-                      </p>
-                    </div>
-      
+
+                <div class="row align-items-top mb-4">
+
+                  <div class="col-11">
+                    <h3 class="h6 font-weight-bold text-uppercase mb-0">
+                      Company Name
+                    </h3>
+
+                    <p class="text-info">
+                      Proxycurl LLC
+                    </p>
                   </div>
 
-                  <!--Headquarters-->
-                  <div class="row align-items-top mb-4">
+                </div>
 
-                    <div class="col-1 d-none d-sm-block">
-                      <span class="neu-email text-gray-700" style="font-size: 24px;"></span>
-                    </div>
-      
-                    <div class="col-11">
-                      <h3 class="h6 font-weight-bold text-uppercase mb-0">
-                        Type of email domain
-                      </h3>
-      
-                      <p class="text-gray-700">
-                        Work email <a class="badge rounded-pill badge-primary-soft ml-1" href="#">Get details</a>
-                      </p>
-                    </div>
-      
+
+                <div class="row align-items-top mb-4">
+
+                  <div class="col-11">
+                    <h3 class="h6 font-weight-bold text-uppercase mb-0">
+                      Main Industries
+                    </h3>
+
+                    <p class="text-info">
+                      Software Development
+                    </p>
                   </div>
 
-                  <!--Founded-->
-                  <div class="row align-items-top mb-4">
+                </div>
 
-                    <div class="col-1 d-none d-sm-block">
-                      <span class="neu-email text-gray-700" style="font-size: 24px;"></span>
-                    </div>
-      
-                    <div class="col-11">
-                      <h3 class="h6 font-weight-bold text-uppercase mb-0">
-                        Associated with a LinkedIn Company Profile?
-                      </h3>
-      
-                      <p class="text-gray-700">
-                        Yes <a class="badge rounded-pill badge-primary-soft ml-1" href="#">Get details</a>
-                      </p>
-                    </div>
-      
-                  </div>
 
-                  <!--Specialties-->
-                  <div class="row align-items-top">
+                <div class="row align-items-top mb-4">
 
-                    <div class="col-1 d-none d-sm-block">
-                      <span class="neu-groups text-gray-700" style="font-size: 24px;"></span>
-                    </div>
-      
-                    <div class="col-11">
-                      <h3 class="h6 font-weight-bold text-uppercase mb-0">
-                        Employee count 
-                      </h3>
+                  <div class="col-11">
+                    <h3 class="h6 font-weight-bold text-uppercase mb-0">
+                      Country
+                    </h3>
 
-                      <p class="text-gray-700">
-                        <a class="badge rounded-pill badge-primary-soft" href="#">Get details</a>
-                      </p>
-      
-                    </div>
-      
+                    <a class="text-info" href="#!">
+                      United States
+                    </a>
                   </div>
 
                 </div>
@@ -571,22 +695,236 @@ response = requests.get(api_endpoint,
 
           </div>
 
-          <div class="col-12 col-md-5">
+        </div>
 
-            <h2 class="font-weight-bold h3">
-              Get the details of nubela.co
-            </h2>
+        <!--Similar companies-->
+        <div class="col-12 col-md-4 d-flex">
 
-            <p class="text-muted mb-6">
-              Proxycurl is a developer's tool to integrate People/Company related data into their applcations
-            </p>
+          <div class="card shadow-light-lg">
 
-            <div class="highlight-block mb-4">
-              <div class="d-flex">
-                <span style="width: 10px; height: 10px;" class="bg-danger rounded-circle"></span>
-                <span style="width: 10px; height: 10px;" class="bg-warning rounded-circle ml-1"></span>
-                <span style="width: 10px; height: 10px;" class="bg-success rounded-circle ml-1"></span>
+            <div class="card-header">
+              <h2 class="lead font-weight-bold pb-0 mb-0">
+                Similar Domains
+              </h2>
+            </div>
+
+            <div class="card-body">
+
+              <div class="row align-items-top">
+                <div class="col-12 col-md-3">
+                  <img class="rounded-circle" width="48" src="assets/img/logos/coresignal.png" alt="coresignal logo">
+                </div>
+
+                <div class="col-12 col-md-9">
+                  <a class="font-weight-bold text-primary" href="#!" target="_blank">
+                    coresignal.com
+                  </a>
+                  <p class="text-truncate text-muted">
+                    Software Development
+                </div>
               </div>
+
+              <div class="row align-items-top">
+                <div class="col-12 col-md-3">
+                  <img class="rounded-circle" width="48" src="assets/img/logos/Brightdata.png" alt="brightdata logo">
+                </div>
+
+                <div class="col-12 col-md-9">
+                  <a class="font-weight-bold text-primary" href="#!" target="_blank">
+                    brightdata.com
+                  </a>
+                  <p class="text-truncate text-muted">
+                    Software Development
+                </div>
+              </div>
+
+              <div class="row align-items-top">
+                <div class="col-12 col-md-3">
+                  <img class="rounded-circle" width="48" src="assets/img/logos/phantombuster.png"
+                    alt="phantombuster logo">
+                </div>
+
+                <div class="col-12 col-md-9">
+                  <a class="font-weight-bold text-primary" href="#!" target="_blank">
+                    phantombusters.com
+                  </a>
+                  <p class="text-truncate text-muted">
+                    Software Development
+                </div>
+              </div>
+
+              <div class="row align-items-top">
+                <div class="col-12 col-md-3">
+                  <img class="rounded-circle" width="48" src="assets/img/logos/pdl.png" alt="peopledatalabs logo">
+                </div>
+
+                <div class="col-12 col-md-9">
+                  <a class="font-weight-bold text-primary" href="#!" target="_blank">
+                    peopledatalabs.com
+                  </a>
+                  <p class="text-truncate text-muted">
+                    Software Development
+                </div>
+              </div>
+
+
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div> <!-- / .row -->
+
+    </div> <!-- / .container -->
+
+  </section>
+
+  <!-- TABS
+    ================================================== -->
+  <section class="pt-8 pt-md-11 pb-8 bg-light border-bottom">
+
+    <div class="container">
+
+      <div class="row align-items-top">
+
+        <div class="col-12 col-md-7 mb-6">
+
+          <h3 class="font-weight-bold"> Domain details</h3>
+
+          <div class="tab-content" id="myTabContent">
+
+            <!--Profile Details-->
+            <div class="tab-pane show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+              <div class="mt-5">
+
+                <!--Website-->
+                <div class="row align-items-top mb-6">
+
+                  <div class="col-1 d-none d-sm-block">
+                    <span class="neu-globe text-gray-700" style="font-size: 24px;"></span>
+                  </div>
+
+                  <div class="col-11">
+                    <h3 class="h6 font-weight-bold text-uppercase mb-0">
+                      Website
+                    </h3>
+
+                    <a class="text-primary" href="https://nubela.co" target="_blank">
+                      https://nubela.co
+                    </a>
+                  </div>
+
+                </div>
+
+                <!--disposable/spam-->
+                <div class="row align-items-top mb-4">
+
+                  <div class="col-1 d-none d-sm-block">
+                    <span class="neu-delete text-gray-700" style="font-size: 24px;"></span>
+                  </div>
+
+                  <div class="col-11">
+                    <h3 class="h6 font-weight-bold text-uppercase mb-0">
+                      Is it a disposable/spam domain?
+                    </h3>
+
+                    <p class="text-gray-700">
+                      Normal <a class="badge rounded-pill badge-primary-soft ml-1 text-primary" data-toggle="modal"
+                        data-target="#disposablespam">Get details</a>
+                    </p>
+                  </div>
+
+                </div>
+
+                <!--type of email-->
+                <div class="row align-items-top mb-4">
+
+                  <div class="col-1 d-none d-sm-block">
+                    <span class="neu-email text-gray-700" style="font-size: 24px;"></span>
+                  </div>
+
+                  <div class="col-11">
+                    <h3 class="h6 font-weight-bold text-uppercase mb-0">
+                      Type of email domain
+                    </h3>
+
+                    <p class="text-gray-700">
+                      Work email <a class="badge rounded-pill badge-primary-soft ml-1 text-primary" data-toggle="modal"
+                        data-target="#typeofemail">Get details</a>
+                    </p>
+                  </div>
+
+                </div>
+
+                <!--Linkedin associated-->
+                <div class="row align-items-top mb-4">
+
+                  <div class="col-1 d-none d-sm-block">
+                    <span class="neu-email text-gray-700" style="font-size: 24px;"></span>
+                  </div>
+
+                  <div class="col-11">
+                    <h3 class="h6 font-weight-bold text-uppercase mb-0">
+                      Associated with a LinkedIn Company Profile?
+                    </h3>
+
+                    <p class="text-gray-700">
+                      Yes <a class="badge rounded-pill badge-primary-soft ml-1 text-primary" data-toggle="modal"
+                        data-target="#linkedinassociated">Get details</a>
+                    </p>
+                  </div>
+
+                </div>
+
+                <!--Employee count-->
+                <div class="row align-items-top">
+
+                  <div class="col-1 d-none d-sm-block">
+                    <span class="neu-groups text-gray-700" style="font-size: 24px;"></span>
+                  </div>
+
+                  <div class="col-11">
+                    <h3 class="h6 font-weight-bold text-uppercase mb-0">
+                      Employee count
+                    </h3>
+
+                    <p class="text-gray-700">
+                      <a class="badge rounded-pill badge-primary-soft ml-1 text-primary" data-toggle="modal"
+                        data-target="#employeecount">Get details</a>
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-12 col-md-5">
+
+          <h2 class="font-weight-bold h3">
+            Get the details of nubela.co
+          </h2>
+
+          <p class="text-muted mb-6">
+            Proxycurl is a developer's tool to integrate People/Company related data into their applcations
+          </p>
+
+          <div class="highlight-block mb-4">
+            <div class="d-flex">
+              <span style="width: 10px; height: 10px;" class="bg-danger rounded-circle"></span>
+              <span style="width: 10px; height: 10px;" class="bg-warning rounded-circle ml-1"></span>
+              <span style="width: 10px; height: 10px;" class="bg-success rounded-circle ml-1"></span>
+            </div>
             <pre><code class="language-python">
 <span class="text-hl">import</span> requests
 api_endpoint = <span class="text-python-hl">'https://nubela.co/proxycurl/api'</span>
@@ -598,220 +936,222 @@ response = requests.get(api_endpoint,
                 headers=header_dic)
 </code>
 </pre>
-            </div>
-
-            <a type="button" href="#" class="btn w-100 btn-primary btn-md text-center">
-              Get API Key and run code
-            </a>
-            
           </div>
+
+          <a type="button" href="#" class="btn w-100 btn-primary btn-md text-center">
+            Get API Key and run code
+          </a>
 
         </div>
 
       </div>
 
-    </section>
+    </div>
 
-    <!-- FOOTER
+  </section>
+
+  <!-- FOOTER
     ================================================== -->
-    <footer class="py-8 py-md-11 bg-white">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-4 col-lg-3">
-        
-            <!-- Brand -->
-            <img src="./assets/img/Proxycurl-Logotype-Primary@1x.png" alt="proxycurl logo" class="footer-brand img-fluid mb-2">
+  <footer class="py-8 py-md-11 bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-3">
 
-          </div>
-          <div class="col-6 col-md-4 col-lg-2">
-        
-            <!-- Heading -->
-            <h6 class="font-weight-bold text-uppercase text-gray-700">
-              Proxycurl
-            </h6>
+          <!-- Brand -->
+          <img src="./assets/img/Proxycurl-Logotype-Primary@1x.png" alt="proxycurl logo"
+            class="footer-brand img-fluid mb-2">
 
-            <!-- List -->
-            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
-              <li class="mb-3">
-                <a href="index.html" class="text-reset">
-                  Home
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="https://nubela.co/blog" class="text-reset">
-                  Blog
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="pricing.html" class="text-reset">
-                  Pricing
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="terms-of-use.html" class="text-reset">
-                  Terms of use
-                </a>
-              </li>
-            </ul>
-
-          </div>
-          <div class="col-6 col-md-4 col-lg-2">
-        
-            <!-- Heading -->
-            <h6 class="font-weight-bold text-uppercase text-gray-700">
-              API
-            </h6>
-
-            <!-- List -->
-            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                  Documentation
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="people-linkedin-profile.html" class="text-reset">
-                  Person Profile Endpoint
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="company-linkedin-profile.html" class="text-reset">
-                  Company Profile Endpoint
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="jobs-linkedin-profile.html" class="text-reset">
-                  Job Profile Endpoint
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="linkdb.html" class="text-reset">
-                  LinkDB
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="linkdb-snapshots.html" class="text-reset">
-                  LinkDB Snapshots
-                </a>
-              </li> 
-              <li class="mb-3">
-                <a href="email-lookup-api-endpoint.html" class="text-reset">
-                  Email Lookup API Endpoint
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="list-employee-endpoint.html" class="text-reset">
-                  List Employee Endpoint
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="reverse-email-lookup.html" class="text-reset">
-                  Reverse Email Lookup
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="employee-search-api.html" class="text-reset">
-                  Employee Search API Endpoint
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="contact-api.html" class="text-reset">
-                  Contact API Endpoint
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="jobs-api.html" class="text-reset">
-                  Jobs API Endpoint
-                </a>
-              </li>
-            </ul>
-
-          </div>
-          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
-        
-            <!-- Heading -->
-            <h6 class="font-weight-bold text-uppercase text-gray-700">
-              Company
-            </h6>
-
-            <!-- List -->
-            <ul class="list-unstyled text-muted mb-0">
-              <li class="mb-3">
-                <a href="https://nubela.co" class="text-reset">
-                  Nubela Pte Ltd
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="team.html" class="text-reset">
-                  Our Team
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="https://nubela.co" class="text-reset">
-                  Other Projects by Nubela
-                </a>
-              </li>
-            </ul>
-
-          </div>
-          <div class="col-6 col-md-4 col-lg-2">
-        
-            <!-- Heading -->
-            <h6 class="font-weight-bold text-uppercase text-gray-700">
-              Help
-            </h6>
-
-            <!-- List -->
-            <ul class="list-unstyled text-muted mb-0">
-              <li class="mb-3">
-                <a href="mailto:hello@proxycurl.com" class="text-reset">
-                  Email us
-                </a>
-              </li>
-            </ul>
-
-          </div>
-        </div> <!-- / .row -->
-        <br>
-
-        <hr>
-        <br>
-
-        <div class="text-center">
-          <p class="caption">Nubela Pte Ltd. All rights reserved.</p>
         </div>
+        <div class="col-6 col-md-4 col-lg-2">
 
-      </div> <!-- / .container -->
-    </footer>
+          <!-- Heading -->
+          <h6 class="font-weight-bold text-uppercase text-gray-700">
+            Proxycurl
+          </h6>
 
-    <!-- JAVASCRIPT
+          <!-- List -->
+          <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+            <li class="mb-3">
+              <a href="index.html" class="text-reset">
+                Home
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="https://nubela.co/blog" class="text-reset">
+                Blog
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="pricing.html" class="text-reset">
+                Pricing
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="terms-of-use.html" class="text-reset">
+                Terms of use
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+
+          <!-- Heading -->
+          <h6 class="font-weight-bold text-uppercase text-gray-700">
+            API
+          </h6>
+
+          <!-- List -->
+          <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+            <li class="mb-3">
+              <a href="#!" class="text-reset">
+                Documentation
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="people-linkedin-profile.html" class="text-reset">
+                Person Profile Endpoint
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="company-linkedin-profile.html" class="text-reset">
+                Company Profile Endpoint
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="jobs-linkedin-profile.html" class="text-reset">
+                Job Profile Endpoint
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="linkdb.html" class="text-reset">
+                LinkDB
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="linkdb-snapshots.html" class="text-reset">
+                LinkDB Snapshots
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="email-lookup-api-endpoint.html" class="text-reset">
+                Email Lookup API Endpoint
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="list-employee-endpoint.html" class="text-reset">
+                List Employee Endpoint
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="reverse-email-lookup.html" class="text-reset">
+                Reverse Email Lookup
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="employee-search-api.html" class="text-reset">
+                Employee Search API Endpoint
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="contact-api.html" class="text-reset">
+                Contact API Endpoint
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="jobs-api.html" class="text-reset">
+                Jobs API Endpoint
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+
+          <!-- Heading -->
+          <h6 class="font-weight-bold text-uppercase text-gray-700">
+            Company
+          </h6>
+
+          <!-- List -->
+          <ul class="list-unstyled text-muted mb-0">
+            <li class="mb-3">
+              <a href="https://nubela.co" class="text-reset">
+                Nubela Pte Ltd
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="team.html" class="text-reset">
+                Our Team
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="https://nubela.co" class="text-reset">
+                Other Projects by Nubela
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+
+          <!-- Heading -->
+          <h6 class="font-weight-bold text-uppercase text-gray-700">
+            Help
+          </h6>
+
+          <!-- List -->
+          <ul class="list-unstyled text-muted mb-0">
+            <li class="mb-3">
+              <a href="mailto:hello@proxycurl.com" class="text-reset">
+                Email us
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div> <!-- / .row -->
+      <br>
+
+      <hr>
+      <br>
+
+      <div class="text-center">
+        <p class="caption">Nubela Pte Ltd. All rights reserved.</p>
+      </div>
+
+    </div> <!-- / .container -->
+  </footer>
+
+  <!-- JAVASCRIPT
     ================================================== -->
-    <!-- Libs JS -->
-    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
-    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
-    <script src="./assets/libs/aos/dist/aos.js"></script>
-    <script src="./assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
-    <script src="./assets/libs/countup.js/dist/countUp.min.js"></script>
-    <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
-    <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
-    <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
-    <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
-    <script src="./assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="./assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
-    <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
-    <script src="./assets/libs/jarallax/dist/jarallax-video.min.js"></script>
-    <script src="./assets/libs/jarallax/dist/jarallax-element.min.js"></script>
-    <script src="./assets/libs/quill/dist/quill.min.js"></script>
-    <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
-    <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
+  <!-- Libs JS -->
+  <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+  <script src="./assets/libs/aos/dist/aos.js"></script>
+  <script src="./assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+  <script src="./assets/libs/countup.js/dist/countUp.min.js"></script>
+  <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+  <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+  <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
+  <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
+  <script src="./assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="./assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+  <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
+  <script src="./assets/libs/jarallax/dist/jarallax-video.min.js"></script>
+  <script src="./assets/libs/jarallax/dist/jarallax-element.min.js"></script>
+  <script src="./assets/libs/quill/dist/quill.min.js"></script>
+  <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+  <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
 
-    <!-- Map -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+  <!-- Map -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 
-    <!-- Theme JS -->
-    <script src="./assets/js/theme.min.js"></script>
+  <!-- Theme JS -->
+  <script src="./assets/js/theme.min.js"></script>
 
 
-  </body>
+</body>
+
 </html>
