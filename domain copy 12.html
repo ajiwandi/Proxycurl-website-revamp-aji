@@ -577,7 +577,7 @@ response = requests.get(api_endpoint,
 
   <!-- COMPANY DIRECTORY
     ================================================== -->
-  <section class="pt-8 pb-7 bg-light">
+  <section class="pt-8 pb-6 bg-light">
 
     <div class="container">
 
@@ -614,7 +614,7 @@ response = requests.get(api_endpoint,
 
                         <div class="ml-2 mr-2">
                           <a class="h5 font-weight-bold mt-1 text-muted" href="https://nubela.co/">
-                            https://<span class="text-primary-desat">nubela.co</span>/
+                            https://<span class="text-info">nubela.co</span>/
                           </a>
                         </div>
 
@@ -632,29 +632,20 @@ response = requests.get(api_endpoint,
 
 
               <!--Company description-->
-              <div class="mt-7">
+              <div class="mt-6">
 
 
                 <div class="row align-items-top mb-7">
 
 
-                  <div class="col-12 col-md-6 pb-6">
-
-
-                    <p class="text-gray-700 mb-0">
-                      <span class="neu-company text-gray-700 ml-n1 pr-1" style="font-size: 17px;"></span> Nubela Pte Ltd
-                    </p>
-
-                  </div>
-
-                  <div class="col-12 col-md-12">
+                  <div class="col-12 col-md-7">
                     <h3 class="h6 font-weight-bold text-uppercase mb-0">
                       About
                     </h3>
 
                     <p class="text-muted">
                       Proxycurl has always been a revenue generating product for us, and in 2020, we launched
-                      Proxycurl's Linkedin API so product teams do not need to manage a dedicated web scraping
+                      Proxycurl's Linkedin API so product teams do not need to manage a dedicated web scraping 
 
                       <a type="button" class="text-black font-weight-bold" data-toggle="modal" data-target="#moreModal">
                         ...more
@@ -664,106 +655,117 @@ response = requests.get(api_endpoint,
                   </div>
 
 
+                  <div class="col-12 col-md-5">
 
+
+                    <p class="text-primary mb-0">
+                      <span class="neu-company text-gray-700 pr-1" style="font-size: 17px;"></span> Nubela Pte Ltd
+                    </p>
+
+                    <p class="text-gray-700 mb-0">
+                      <span class="neu-factory text-gray-700 pr-1" style="font-size: 17px;"></span> Software Development
+                    </p>
+
+                    <p class="text-gray-700 mb-0">
+                      <span class="neu-gps text-gray-700 pr-1" style="font-size: 17px;"></span> United States
+                    </p>
+                  </div>
 
                 </div> <!-- desc-->
 
 
-                <!--disposable/spam & Linkedin association-->
-                <div class="row align-items-top mb-6">
+                <!--disposable/spam-->
+                <div class="row align-items-top mb-5">
 
-                  <div class="col-6">
+                  <div class="col-1 d-none d-sm-block mt-n2">
+                    <span class="neu-delete text-gray-700" style="font-size: 24px;"></span>
+                  </div>
 
-                    <span class="neu-delete text-gray-700 ml-n1" style="font-size: 24px;"></span>
-
-
-
-                    <p class="h6 font-weight-bold text-uppercase mb-3 mt-2">
+                  <div class="col-11">
+                    <h3 class="small font-weight-bold text-uppercase mb-2">
                       Is it a disposable/spam domain?
-                    </p>
-
-                    <h3 class="h3 font-weight-bold text-primary mb-3 ">
-
-                      Normal
-
-                      <a class="py-0 ml-3 mt-n1 small btn btn-xs btn-outline-primary" data-toggle="modal" href="#"
-                        data-target="#disposablespam"><span class="h6 font-weight-bold">Get
-                          details</span></a>
-
                     </h3>
 
+                    <p class="lead font-weight-bold text-info mb-3 ">
+                      
+                      NORMAL 
 
+                      <a class="py-0 ml-3 mt-n1 small btn btn-xs btn-outline-primary"
+                      data-toggle="modal" href="#" data-target="#disposablespam"><span class="h6 font-weight-bold">Get
+                        details</span></a>
+
+                    </p>
 
                   </div>
 
-                  <div class="col-6">
-                    <span class="neu-br-linkedin text-gray-700 ml-n1" style="font-size: 24px;"></span>
+                </div>
 
+                <!--type of email-->
+                <div class="row align-items-top mb-5">
 
+                  <div class="col-1 d-none d-sm-block mt-n2">
+                    <span class="neu-email text-gray-700" style="font-size: 24px;"></span>
+                  </div>
 
-                    <h3 class="h6 font-weight-bold text-uppercase mb-3 mt-2">
-                      Associated with a LinkedIn Company Profile?
+                  <div class="col-11">
+                    <h3 class="small font-weight-bold text-uppercase mb-3">
+                      Type of email domain
                     </h3>
 
-                    <p class="lead font-weight-bold text-primary mb-0">
-                      Yes
-
-                      <a class="py-0 ml-3 mt-n1 small btn btn-xs btn-outline-primary" data-toggle="modal" href="#"
-                        data-target="#linkedinassociated"><span class="h6 font-weight-bold">Get
+                    <p class="lead font-weight-bold text-info mb-0">
+                      WORK EMAIL 
+                      
+                      <a class="py-0 ml-3 mt-n1 small btn btn-xs btn-outline-primary"
+                      data-toggle="modal" href="#" data-target="#typeofemail"><span class="h6 font-weight-bold">Get
                           details</span></a>
                     </p>
-
 
                   </div>
 
                 </div>
 
                 <!--Linkedin associated-->
-                <div class="row align-items-top">
+                <div class="row align-items-top mb-5">
 
+                  <div class="col-1 d-none d-sm-block mt-n2">
+                    <span class="neu-br-linkedin text-gray-700" style="font-size: 24px;"></span>
+                  </div>
 
-                  <div class="col-6">
-
-
-                    <span class="neu-email text-gray-700 ml-n1" style="font-size: 24px;"></span>
-
-
-
-                    <h3 class="h6 font-weight-bold text-uppercase mb-3 mt-2">
-                      Type of email domain
+                  <div class="col-11">
+                    <h3 class="small font-weight-bold text-uppercase mb-3">
+                      Associated with a LinkedIn Company Profile?
                     </h3>
 
-                    <p class="lead font-weight-bold text-primary mb-0">
-                      Work Email
-
-                      <a class="py-0 ml-3 mt-n1 small btn btn-xs btn-outline-primary" data-toggle="modal" href="#"
-                        data-target="#typeofemail"><span class="h6 font-weight-bold">Get
+                    <p class="lead font-weight-bold text-info mb-0">
+                      YES 
+                      
+                      <a class="py-0 ml-3 mt-n1 small btn btn-xs btn-outline-primary"
+                      data-toggle="modal" href="#" data-target="#linkedinassociated"><span class="h6 font-weight-bold">Get
                           details</span></a>
                     </p>
 
-
-
                   </div>
 
+                </div>
 
+                <!--Employee count-->
+                <div class="row align-items-top">
 
-                  <div class="col-6">
-                    <span class="neu-groups text-gray-700 ml-n1" style="font-size: 24px;"></span>
+                  <div class="col-1 d-none d-sm-block mt-n2">
+                    <span class="neu-groups text-gray-700" style="font-size: 24px;"></span>
+                  </div>
 
-
-
-                    <h3 class="h6 font-weight-bold text-uppercase mb-4 mt-2">
+                  <div class="col-11">
+                    <h3 class="small font-weight-bold text-uppercase mb-3">
                       Employee count
                     </h3>
 
                     <p class="text-gray-700">
-                      <a class="py-0 ml-0 mt-n1 small btn btn-xs btn-outline-primary" data-toggle="modal" href="#"
-                        data-target="#employeecount"><span class="h6 font-weight-bold">Get details</span></a>
+                      <a class="py-0 ml-0 mt-n1 small btn btn-xs btn-outline-primary"
+                      data-toggle="modal" href="#" data-target="#employeecount"><span class="h6 font-weight-bold">Get details</span></a>
                     </p>
 
                   </div>
-
-
 
                 </div>
 
