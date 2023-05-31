@@ -318,20 +318,21 @@
               <!-- Nav-->
               <nav class="pb-md-6 pb-4">
                 <div class="nav nav-pills nav-fill flex-column flex-sm-row" id="nav-tab" role="tablist">
-                  <a class="font-weight-bold nav-item nav-link active" id="nav-onetime-tab" data-toggle="tab"
+
+                  <a class="font-weight-bold nav-item nav-link active pt-4" id="nav-onetime-tab" data-toggle="tab"
                     href="#nav-onetime" role="tab" aria-controls="nav-onetime" aria-selected="true">
                     One-time Upfront
                     <p class="h6 font-weight-bold text-reset"> </p>
                   </a>
-                  <a class="font-weight-bold nav-item nav-link" id="nav-monthly-tab" data-toggle="tab"
+                  <a class="font-weight-bold nav-item nav-link pt-4" id="nav-monthly-tab" data-toggle="tab"
                     href="#nav-monthly" role="tab" aria-controls="nav-monthly" aria-selected="false">Monthly Payment
                     <p class="h6 font-weight-bold text-reset"></p>
                   </a>
-                  <a class="font-weight-bold nav-item nav-link" id="nav-quarterly-tab" data-toggle="tab"
+                  <a class="font-weight-bold nav-item nav-link pt-4" id="nav-quarterly-tab" data-toggle="tab"
                     href="#nav-quarterly" role="tab" aria-controls="nav-quarterly" aria-selected="false">Quarterly Payment
                     <p class="h6 font-weight-bold text-reset"></p>
                   </a>
-                  <a class="font-weight-bold nav-item nav-link" id="nav-updatecost-tab" data-toggle="tab"
+                  <a class="font-weight-bold nav-item nav-link pt-4" id="nav-updatecost-tab" data-toggle="tab"
                     href="#nav-updatecost" role="tab" aria-controls="nav-updatecost" aria-selected="false">Update Cost
                     <p class="h6 font-weight-bold text-reset"> </p>
                   </a>
@@ -344,258 +345,441 @@
                 <!-- Content 1-->
                 <div class="table-responsive tab-pane fade show active" id="nav-onetime" role="tabpanel"
                   aria-labelledby="nav-onetime-tab">
-
+                
                   <table class="table table-hover">
-                  
+                
                     <thead class="bg-light">
                       <tr class="h3 text-gray-700">
-                        <th scope="col">People (country)</th>
-                        <th scope="col">Company</th>
-                        <th class="text-right pr-9" scope="col">Cost</th>
+                        <th scope="col" class="align-middle">People <span class="badge badge-secondary-soft text-uppercase"><span
+                              class="h6 font-weight-bold">Country</span></span></th>
+                        <th scope="col" class="align-middle">Company</th>
+                        <th class="text-right pr-9 align-middle" scope="col">Cost</th>
                       </tr>
                     </thead>
-                  
+                
                     <tbody>
                       <tr class="clickable table-primary" onclick="window.location='#!'">
                         <td class="col-4 font-weight-bold">
-                          <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
-                            <i class="fe fe-check"></i>
-                          </div>170+MM profiles (US)
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>170+M profiles <span class="badge badge-secondary-soft text-uppercase font-weight-bold">US</span>
+                              </div>
+                            </div>
+                          </div>
                         </td>
                         <td class="col-4 h4 pr-9 font-weight-bold text-muted">
-                          <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
-                            <i class="fe fe-x"></i></td>
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
+                                <i class="fe fe-x"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
                         <td class="col-auto h4 text-right pr-9 font-weight-bold">$45000</td>
                       </tr>
                       <tr class="clickable" onclick="window.location='#!'">
                         <td class="col-4 font-weight-bold">
-                          <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
-                            <i class="fe fe-check"></i>
-                          </div>Individual country
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>Individual country</div>
+                            </div>
+                          </div>
                         </td>
                         <td class="col-4 h4 pr-9 font-weight-bold text-muted">
                           <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
-                            <i class="fe fe-x"></i></td>
+                            <i class="fe fe-x"></i>
+                        </td>
                         <td class="col-auto h4 font-weight-bold pr-9 text-right">Starts from $9000</td>
                       </tr>
+                
                       <tr class="clickable" onclick="window.location='#!'">
-                        <td class="col-4 font-weight-bold text-muted">
-                          <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
-                            <i class="fe fe-x"></i></td>
-                        <td class="col-4 font-weight-bold">
-                          <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
-                            <i class="fe fe-check"></i>
-                          </div>18+M profiles (Global)
-                        </td>
-                        <td class="col-auto h4 text-right pr-9 font-weight-bold">$12000</td>
+                        <div class="row">
+                          <div class="col-12 d-flex">
+                            <td class="col-4 font-weight-bold text-muted">
+                              <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
+                                <i class="fe fe-x"></i>
+                              </div>
+                            </td>
+                          </div>
+                          </td>
+                          <td class="col-4 font-weight-bold">
+                            <div class="row">
+                              <div class="col-12 d-flex">
+                                <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                  <i class="fe fe-check"></i>
+                                </div>
+                                <div>18+M profiles <span class="badge badge-secondary-soft text-uppercase">Global</span></div>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="col-auto h4 text-right pr-9 font-weight-bold">$12000</td>
                       </tr>
+                
                       <tr class="clickable" onclick="window.location='#!'">
                         <td class="col-4 font-weight-bold">
-                          <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
-                            <i class="fe fe-check"></i>
-                          </div>Global profiles
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>Global profiles</div>
+                            </div>
+                          </div>
+                        </td>
+                
                         </td>
                         <td class="col-4 font-weight-bold">
-                          <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
-                            <i class="fe fe-check"></i>
-                          </div>Global profiles
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>Global profiles</div>
+                            </div>
+                          </div>
                         </td>
                         <td class="col-auto h4 text-right pr-9 font-weight-bold">$69500</td>
                       </tr>
                     </tbody>
                   </table>
+
                 </div>
   
                 <!-- Content 2-->
                 <div class="table-responsive tab-pane fade" id="nav-monthly" role="tabpanel"
                   aria-labelledby="nav-monthly-tab">
+
                   <table class="table table-hover">
-                  
+                
                     <thead class="bg-light">
                       <tr class="h3 text-gray-700">
-                        <th scope="col">People (country)</th>
-                        <th scope="col">Company</th>
-                        <th class="text-right pr-9" scope="col">Cost</th>
+                        <th scope="col" class="align-middle">People <span class="badge badge-secondary-soft text-uppercase"><span
+                              class="h6 font-weight-bold">Country</span></span></th>
+                        <th scope="col" class="align-middle">Company</th>
+                        <th class="text-right pr-9 align-middle" scope="col">Cost</th>
                       </tr>
                     </thead>
-                  
+                
                     <tbody>
                       <tr class="clickable table-primary" onclick="window.location='#!'">
                         <td class="col-4 font-weight-bold">
-                          <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
-                            <i class="fe fe-check"></i>
-                          </div>170+MM profiles (US)
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>170+M profiles <span class="badge badge-secondary-soft text-uppercase font-weight-bold">US</span>
+                              </div>
+                            </div>
+                          </div>
                         </td>
                         <td class="col-4 h4 pr-9 font-weight-bold text-muted">
-                          <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
-                            <i class="fe fe-x"></i></td>
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
+                                <i class="fe fe-x"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
                         <td class="col-auto h4 text-right pr-9 font-weight-bold">$7500</td>
                       </tr>
                       <tr class="clickable" onclick="window.location='#!'">
                         <td class="col-4 font-weight-bold">
-                          <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
-                            <i class="fe fe-check"></i>
-                          </div>Individual country
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>Individual country</div>
+                            </div>
+                          </div>
                         </td>
                         <td class="col-4 h4 pr-9 font-weight-bold text-muted">
                           <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
-                            <i class="fe fe-x"></i></td>
+                            <i class="fe fe-x"></i>
+                        </td>
                         <td class="col-auto h4 font-weight-bold pr-9 text-right">Depends</td>
                       </tr>
+                
                       <tr class="clickable" onclick="window.location='#!'">
-                        <td class="col-4 font-weight-bold text-muted">
-                          <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
-                            <i class="fe fe-x"></i></td>
-                        <td class="col-4 font-weight-bold">
-                          <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
-                            <i class="fe fe-check"></i>
-                          </div>18+M profiles (Global)
-                        </td>
-                        <td class="col-auto h4 text-right pr-9 font-weight-bold">$2000</td>
+                        <div class="row">
+                          <div class="col-12 d-flex">
+                            <td class="col-4 font-weight-bold text-muted">
+                              <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
+                                <i class="fe fe-x"></i>
+                              </div>
+                            </td>
+                          </div>
+                          </td>
+                          <td class="col-4 font-weight-bold">
+                            <div class="row">
+                              <div class="col-12 d-flex">
+                                <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                  <i class="fe fe-check"></i>
+                                </div>
+                                <div>18+M profiles <span class="badge badge-secondary-soft text-uppercase">Global</span></div>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="col-auto h4 text-right pr-9 font-weight-bold">$2000</td>
                       </tr>
+                
                       <tr class="clickable" onclick="window.location='#!'">
                         <td class="col-4 font-weight-bold">
-                          <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
-                            <i class="fe fe-check"></i>
-                          </div>Global profiles
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>Global profiles</div>
+                            </div>
+                          </div>
+                        </td>
+                
                         </td>
                         <td class="col-4 font-weight-bold">
-                          <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
-                            <i class="fe fe-check"></i>
-                          </div>Global profiles
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>Global profiles</div>
+                            </div>
+                          </div>
                         </td>
                         <td class="col-auto h4 text-right pr-9 font-weight-bold">$11500</td>
                       </tr>
                     </tbody>
-                  </table>
+                  </table>          
+
                 </div>
   
                 <!-- Content 3-->
                 <div class="table-responsive tab-pane fade" id="nav-quarterly" role="tabpanel"
                   aria-labelledby="nav-quarterly-tab">
+                 
                   <table class="table table-hover">
-                  
+                
                     <thead class="bg-light">
                       <tr class="h3 text-gray-700">
-                        <th scope="col">People (country)</th>
-                        <th scope="col">Company</th>
-                        <th class="text-right pr-9" scope="col">Cost</th>
+                        <th scope="col" class="align-middle">People <span class="badge badge-secondary-soft text-uppercase"><span
+                              class="h6 font-weight-bold">Country</span></span></th>
+                        <th scope="col" class="align-middle">Company</th>
+                        <th class="text-right pr-9 align-middle" scope="col">Cost</th>
                       </tr>
                     </thead>
-                  
+                
                     <tbody>
                       <tr class="clickable table-primary" onclick="window.location='#!'">
                         <td class="col-4 font-weight-bold">
-                          <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
-                            <i class="fe fe-check"></i>
-                          </div>170+MM profiles (US)
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>170+M profiles <span class="badge badge-secondary-soft text-uppercase font-weight-bold">US</span>
+                              </div>
+                            </div>
+                          </div>
                         </td>
                         <td class="col-4 h4 pr-9 font-weight-bold text-muted">
-                          <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
-                            <i class="fe fe-x"></i></td>
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
+                                <i class="fe fe-x"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
                         <td class="col-auto h4 text-right pr-9 font-weight-bold">$15000</td>
                       </tr>
                       <tr class="clickable" onclick="window.location='#!'">
                         <td class="col-4 font-weight-bold">
-                          <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
-                            <i class="fe fe-check"></i>
-                          </div>Individual country
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>Individual country</div>
+                            </div>
+                          </div>
                         </td>
                         <td class="col-4 h4 pr-9 font-weight-bold text-muted">
                           <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
-                            <i class="fe fe-x"></i></td>
+                            <i class="fe fe-x"></i>
+                        </td>
                         <td class="col-auto h4 font-weight-bold pr-9 text-right">Depends</td>
                       </tr>
+                
                       <tr class="clickable" onclick="window.location='#!'">
-                        <td class="col-4 font-weight-bold text-muted">
-                          <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
-                            <i class="fe fe-x"></i></td>
-                        <td class="col-4 font-weight-bold">
-                          <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
-                            <i class="fe fe-check"></i>
-                          </div>18+M profiles (Global)
-                        </td>
-                        <td class="col-auto h4 text-right pr-9 font-weight-bold">$4000</td>
+                        <div class="row">
+                          <div class="col-12 d-flex">
+                            <td class="col-4 font-weight-bold text-muted">
+                              <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
+                                <i class="fe fe-x"></i>
+                              </div>
+                            </td>
+                          </div>
+                          </td>
+                          <td class="col-4 font-weight-bold">
+                            <div class="row">
+                              <div class="col-12 d-flex">
+                                <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                  <i class="fe fe-check"></i>
+                                </div>
+                                <div>18+M profiles <span class="badge badge-secondary-soft text-uppercase">Global</span></div>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="col-auto h4 text-right pr-9 font-weight-bold">$4000</td>
                       </tr>
+                
                       <tr class="clickable" onclick="window.location='#!'">
                         <td class="col-4 font-weight-bold">
-                          <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
-                            <i class="fe fe-check"></i>
-                          </div>Global profiles
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>Global profiles</div>
+                            </div>
+                          </div>
+                        </td>
+                
                         </td>
                         <td class="col-4 font-weight-bold">
-                          <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
-                            <i class="fe fe-check"></i>
-                          </div>Global profiles
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>Global profiles</div>
+                            </div>
+                          </div>
                         </td>
                         <td class="col-auto h4 text-right pr-9 font-weight-bold">$22500</td>
                       </tr>
                     </tbody>
-                  </table>
+                  </table>           
+
                 </div>
   
                 <!-- Content 4-->
                 <div class="table-responsive tab-pane fade" id="nav-updatecost" role="tabpanel"
                   aria-labelledby="nav-updatecost-tab">
+
                   <table class="table table-hover">
-                  
+                
                     <thead class="bg-light">
                       <tr class="h3 text-gray-700">
-                        <th scope="col">People (country)</th>
-                        <th scope="col">Company</th>
-                        <th class="text-right pr-9" scope="col">Cost</th>
+                        <th scope="col" class="align-middle">People <span class="badge badge-secondary-soft text-uppercase"><span
+                              class="h6 font-weight-bold">Country</span></span></th>
+                        <th scope="col" class="align-middle">Company</th>
+                        <th class="text-right pr-9 align-middle" scope="col">Cost</th>
                       </tr>
                     </thead>
-                  
+                
                     <tbody>
                       <tr class="clickable table-primary" onclick="window.location='#!'">
                         <td class="col-4 font-weight-bold">
-                          <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
-                            <i class="fe fe-check"></i>
-                          </div>170+MM profiles (US)
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>170+M profiles <span class="badge badge-secondary-soft text-uppercase font-weight-bold">US</span>
+                              </div>
+                            </div>
+                          </div>
                         </td>
                         <td class="col-4 h4 pr-9 font-weight-bold text-muted">
-                          <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
-                            <i class="fe fe-x"></i></td>
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
+                                <i class="fe fe-x"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
                         <td class="col-auto h4 text-right pr-9 font-weight-bold">$4500</td>
                       </tr>
                       <tr class="clickable" onclick="window.location='#!'">
                         <td class="col-4 font-weight-bold">
-                          <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
-                            <i class="fe fe-check"></i>
-                          </div>Individual country
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>Individual country</div>
+                            </div>
+                          </div>
                         </td>
                         <td class="col-4 h4 pr-9 font-weight-bold text-muted">
                           <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
-                            <i class="fe fe-x"></i></td>
+                            <i class="fe fe-x"></i>
+                        </td>
                         <td class="col-auto h4 font-weight-bold pr-9 text-right">Starts from $1000</td>
                       </tr>
+                
                       <tr class="clickable" onclick="window.location='#!'">
-                        <td class="col-4 font-weight-bold text-muted">
-                          <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
-                            <i class="fe fe-x"></i></td>
-                        <td class="col-4 font-weight-bold">
-                          <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
-                            <i class="fe fe-check"></i>
-                          </div>18+M profiles (Global)
-                        </td>
-                        <td class="col-auto h4 text-right pr-9 font-weight-bold">$2000</td>
+                        <div class="row">
+                          <div class="col-12 d-flex">
+                            <td class="col-4 font-weight-bold text-muted">
+                              <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
+                                <i class="fe fe-x"></i>
+                              </div>
+                            </td>
+                          </div>
+                          </td>
+                          <td class="col-4 font-weight-bold">
+                            <div class="row">
+                              <div class="col-12 d-flex">
+                                <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                  <i class="fe fe-check"></i>
+                                </div>
+                                <div>18+M profiles <span class="badge badge-secondary-soft text-uppercase">Global</span></div>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="col-auto h4 text-right pr-9 font-weight-bold">$2000</td>
                       </tr>
+                
                       <tr class="clickable" onclick="window.location='#!'">
                         <td class="col-4 font-weight-bold">
-                          <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
-                            <i class="fe fe-check"></i>
-                          </div>Global profiles
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>Global profiles</div>
+                            </div>
+                          </div>
+                        </td>
+                
                         </td>
                         <td class="col-4 font-weight-bold">
-                          <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
-                            <i class="fe fe-check"></i>
-                          </div>Global profiles
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>Global profiles</div>
+                            </div>
+                          </div>
                         </td>
                         <td class="col-auto h4 text-right pr-9 font-weight-bold">$9000</td>
                       </tr>
                     </tbody>
-                  </table>
+                  </table>     
+
                 </div>
   
               </div>
