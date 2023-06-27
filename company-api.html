@@ -261,7 +261,7 @@
 
     <!-- FIRST FOLD
     ================================================== -->
-    <section class="pt-8 pt-md-11 pb-10 pb-md-12 border-bottom">
+    <section class="pt-8 pt-md-12 pb-10 pb-md-12 border-bottom">
 
       <div class="container">
         <div class="row justify-content-center">
@@ -298,10 +298,10 @@
 
     <!-- SECOND FOLD
     ================================================== -->
-    <section class="pt-8 pt-md-12 pb-10 pb-md-12 bg-light border-bottom">
+    <section class="pt-8 pt-md-11 pb-10 pb-md-12 bg-light border-bottom">
 
-    <div class="container">
-        <div class="row justify-content-center">
+    <div class="container pb-14">
+        <div class="row justify-content-center mb-8">
     
             <div class="col-12 col-md-8 col-lg-10">
     
@@ -309,144 +309,126 @@
                     Company Lookup Endpoint
                 </h2>
     
-                <p class="text-muted lead text-center mb-8">
-                    Identify a company by a name or domain.
+                <p class="text-muted lead text-center">
+                    Identify a company by a name or domain
                 </p>
     
             </div>
             
         </div>
-
-        <div class="card shadow-light">
-            <div class="card-body">
-        <div class="row justify-content-between"> 
-
-            <div class="col-12 col-md-5">
-                <span class="badge badge-lg badge-pill badge-primary-soft mb-6 text-uppercase"> Input </span>
-             
+        
+            <div class="row justify-content-between">
+            
+              <div class="col-12 col-md-5">
+                <div class="card shadow-light">
+                  <div class="card-body">
+                    <span class="badge badge-pill badge-float badge-float-outside badge-info text-uppercase"> Input </span>
+            
                     <fieldset disabled>
-                    <span style="cursor: auto;" class="btn btn-white btn-block shadow-lg text-muted">
-                      http://8mrealestate.com
-                    </span>
-                  </fieldset>
-
-                              <!--arrow-->
-            <div class="text-center mt-n2">
-              <span class="badge badge-lg badge-rounded-circle bg-primary text-white">
-                <i class="fe fe-arrow-down"></i>
-              </span>
-            </div>
-
-              <!-- Code block -->
-              <div class="highlight-block text-left mt-n2 mb-3">
-
-                <!-- Controls -->
-                <div class="d-flex">
-                  <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
-                  <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                  <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                      <span style="cursor: auto;" class="btn btn-white btn-block shadow-lg text-gray-700 text-left">
+                        http://apple.com
+                      </span>
+                    </fieldset>
+            
+                    <!--arrow-->
+                    <div class="text-center mt-n2">
+                      <span class="badge badge-lg badge-rounded-circle bg-info text-white">
+                        <i class="fe fe-arrow-down"></i>
+                      </span>
+                    </div>
+            
+                    <!-- Code block -->
+                    <div class="highlight-block text-left mt-n2 mb-3">
+            
+                      <!-- Controls -->
+                      <div class="d-flex">
+                        <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                        <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                        <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                      </div>
+            
+                      <pre>
+                                    <code class="language-python">
+  curl \ -G \ -H "Authorization: Bearer ${YOUR_API_KEY}" \ 'https://nubela.co/proxycurl/api/linkedin/company/resolve' \ --data-urlencode 'company_domain=http://apple.com' \    
+                                </code></pre>
+            
+                    </div>
+                  </div>
                 </div>
-
-                <pre>
-                <code class="language-python">
-curl \ -G \ -H "Authorization: Bearer ${YOUR_API_KEY}" \ 'https://nubela.co/proxycurl/api/linkedin/company/resolve' \ --data-urlencode 'company_domain=http://8mrealestate.com' \    
-            </code></pre>
-
               </div>
-            </div>
 
 
-            <div class="col-12 col-md-7">
-                <span class="badge badge-lg badge-pill badge-primary-soft mb-6 text-uppercase"> Output </span>
+              <div class="col text-center d-md-block d-lg-block d-xl-block d-none d-sm-none mt-6">
+                <h1 class="display-3 mb-0">
+                  <i class="fe fe-arrow-right"></i>
+                </h1>
+              </div>
 
-                <fieldset disabled>
-                    <span style="cursor: auto;" class="btn btn-outline-primary btn-white btn-block shadow-lg text-black">
-                      <i class="neu-br-linkedin-sq text-primary"></i>
-                      linkedin.com/company/8m-real-estate-singapore
-                    </span>
-                  </fieldset>
-
-                                                <!--arrow-->
-            <div class="text-center mt-n2">
-                <span class="badge badge-lg badge-rounded-circle bg-primary text-white">
+              <div class="col text-center d-sm-block d-md-none d-lg-none d-xl-none">
+                <h1 class="display-3 mb-0">
                   <i class="fe fe-arrow-down"></i>
-                </span>
-              </div>
+                </h1>
+              </div> <!-- input-->
+            
+            
+              <div class="col-12 col-md-6">
+                <div class="card shadow-light">
+                  <div class="card-body">
+              
+                    <span class="badge badge-pill badge-float badge-float-outside badge-primary text-uppercase"> Output </span>
+                    <div class="row mb-0">
+                      
+                    <div class="col-1">
+                      <svg class="" width="24" height="32" viewBox="0 3 24 24"><path fill="#335eea" d="M21,2H3A1,1,0,0,0,2,3V21a1,1,0,0,0,1,1H21a1,1,0,0,0,1-1V3A1,1,0,0,0,21,2ZM8.078,18.737H5.085v-9H8.078ZM6.582,8.5h-.02A1.56,1.56,0,1,1,6.6,5.393,1.56,1.56,0,1,1,6.582,8.5ZM18.87,18.737H15.877V13.921c0-1.211-.433-2.036-1.516-2.036a1.637,1.637,0,0,0-1.535,1.094,2.032,2.032,0,0,0-.1.731v5.027H9.734s.04-8.16,0-9h2.992V11.01a2.97,2.97,0,0,1,2.7-1.488c1.969,0,3.446,1.287,3.446,4.053Z"/></svg>
+                    </div>
+                    <div class="col-10 pl-3 h5 font-weight-bold text-gray-700">
+                      LinkedIn URL
+                    </div>
+                    </div>
+                    <fieldset disabled>
+                      <span style="cursor: auto;"
+                        class="btn btn-outline-primary btn-white btn-block shadow-lg text-black text-left mb-5">
+              
+                        <div class="row align-items-center">
 
-              <!-- Code block -->
-              <div class="highlight-block text-left mt-n2 mb-3">
-
-                <!-- Controls -->
-                <div class="d-flex">
-                  <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
-                  <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                  <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+              
+                          <div class="col-12">
+                            <div class="row">
+                          
+                              <div class="col-12">
+                                linkedin.com/company/apple
+                              </div>
+                            </div>
+                          </div>
+              
+                        </div> <!-- row-->
+                      </span>
+                    </fieldset>
+              
+              
+                    <!-- Code block -->
+                    <div class="highlight-block text-left mb-3">
+              
+                      <!-- Controls -->
+                      <div class="d-flex">
+                        <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                        <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                        <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                      </div>
+              
+                      <pre>
+<code class="language-python">                        
+  {
+    "url": "https://sg.linkedin.com/company/apple"
+  }
+                                  </code></pre>
+              
+                    </div>
+                  </div>
                 </div>
-
-                <pre style="height: 350px;">
-                <code class="language-python">                        
-    {
-     "description":"8M is a specialized real estate investment & operating company with more than S$700M AUM.  We employ creative, repositioning strategies across multiple asset classes in Singapore to unlock long-term value & build community.  \n  \n8M creates lifestyle destinations with a sustainable drive by readapting existing real estate with purposeful design and best-in-class partnerships to re-energize Singapore communities.  We are a business at the forefront of an evolving landscape, presenting an unrivaled portfolio of real estate across the city's most desirable districts.  \n\nIn our pursuit to evolve the way people live, work & play in Singapore, 8M Collective was formed in 2018 as the umbrella brand and management company of 8M Real Estate's rapidly accommodation business.  8M Collective is transforming Singapore stays through the conception & development of flexible-living concepts that aim to transform the way people stay in Singapore.\n\nIn just 5 years, we have been instrumental in the re-invigoration of prime areas including Amoy Street & Keong Saik Road and have launched popular boutique living concepts including Base Residences, Ann Siang House and K\u0113Sa House.",
-     "website":"http://8mrealestate.com",
-     "industry":"Real Estate",
-     "company_size":[
-        11,
-        50
-     ],
-     "company_size_on_linkedin":44,
-     "hq":{
-        "country":"SG",
-        "geographic_area":null,
-        "city":"Singapore",
-        "postal_code":"069907",
-        "line_1":"88a Amoy St",
-        "is_hq":true
-     },
-     "company_type":"PRIVATELY_HELD",
-     "founded_year":2014,
-     "specialities":[
-        "Acquisitions",
-        "Asset Management",
-        "Property Management",
-        "Real Estate Finance",
-        "Leasing",
-        "Hospitality",
-        "Alternative Accommodation",
-        "Property Development",
-        "Portfolio Management",
-        "Deal Sourcing",
-        "Development",
-        "Hospitality Management",
-        "Owner/Operator",
-        "place making",
-        "Re-adaptive Use",
-        "Refurbishment"
-     ],
-     "locations":[
-        {
-           "country":"SG",
-           "geographic_area":null,
-           "city":"Singapore",
-           "postal_code":"069907",
-           "line_1":"88a Amoy St",
-           "is_hq":true
-        }
-     ],
-     "name":"8M",
-     "tagline":"A SPECIALIZED REAL ESTATE INVESTMENT & OPERATING CO.\n",
-     "universal_name_id":"8m-real-estate-singapore",
-     "profile_pic_url":"https://media-exp1.licdn.com/dms/image/C510BAQGSRz4mjWcjxg/company-logo_400_400/0?e=1603929600&v=beta&t=yJgQGG-jGRnP1IkFjMF_wJv4fdYlp5o6SaAbtXkFBQo",
-     "background_cover_image_url":"https://media-exp1.licdn.com/dms/image/C511BAQHp0169DoUyWQ/company-background_200/0?e=1596193200&v=beta&t=pZfzSUUsYbqBZ9fgrliGhH-eu5HN26wpL-bUFZwkPeg",
-     "funding_data":null,
-     "phone":"+65 6323 0454"
-    }            
-            </code></pre>
-
-              </div>                  
+              </div> <!-- output-->
+            
             </div>
-        </div>
-        </div>
-        </div>
             
     
         <div class="row justify-content-center">
@@ -461,9 +443,668 @@ curl \ -G \ -H "Authorization: Bearer ${YOUR_API_KEY}" \ 'https://nubela.co/prox
             </div>
     
         </div>
-    
-    </div> <!-- / .row -->
+
+    </div> <!-- container Company Lookup Endpoint-->
+
+    <div class="container pb-14">
+      <div class="row justify-content-center mb-8">
+  
+          <div class="col-12 col-md-8 col-lg-10">
+  
+              <h2 class="display-4 mb-2 text-center">
+                Company Profile Endpoint
+              </h2>
+  
+              <p class="text-muted lead text-center">
+                Enrich a company profile with structured data
+              </p>
+  
+          </div>
+          
+      </div>
+      
+          <div class="row justify-content-between">
+          
+            <div class="col-12 col-md-5">
+              <div class="card shadow-light">
+                <div class="card-body">
+                  <span class="badge badge-pill badge-float badge-float-outside badge-info text-uppercase"> Input </span>
+          
+                  <fieldset disabled>
+                    <span style="cursor: auto;" class="btn btn-white btn-block shadow-lg text-gray-700 text-left">
+                      linkedin.com/company/apple
+                    </span>
+                  </fieldset>
+          
+                  <!--arrow-->
+                  <div class="text-center mt-n2">
+                    <span class="badge badge-lg badge-rounded-circle bg-info text-white">
+                      <i class="fe fe-arrow-down"></i>
+                    </span>
+                  </div>
+          
+                  <!-- Code block -->
+                  <div class="highlight-block text-left mt-n2 mb-3">
+          
+                    <!-- Controls -->
+                    <div class="d-flex">
+                      <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                      <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                      <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                    </div>
+          
+                    <pre>
+                                  <code class="language-python">
+  curl \ -G \ -H "Authorization: Bearer ${YOUR_API_KEY}" \ 'https://nubela.co/proxycurl/api/linkedin/company' \ --data-urlencode 'url=https://www.linkedin.com/company/apple/' \ --data-urlencode 'resolve_numeric_id=true' \ --data-urlencode 'categories=include' \ --data-urlencode 'funding_data=include' \ --data-urlencode 'extra=include' \ --data-urlencode 'exit_data=include' \ --data-urlencode 'acquisitions=include' \ --data-urlencode 'use_cache=if-present'   
+                              </code></pre>
+          
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col text-center d-md-block d-lg-block d-xl-block d-none d-sm-none mt-6">
+              <h1 class="display-3 mb-0">
+                <i class="fe fe-arrow-right"></i>
+              </h1>
+            </div>
+
+            <div class="col text-center d-sm-block d-md-none d-lg-none d-xl-none">
+              <h1 class="display-3 mb-0">
+                <i class="fe fe-arrow-down"></i>
+              </h1>
+            </div>
+          
+          
+            <div class="col-12 col-md-6">
+              <div class="card shadow-light">
+                <div class="card-body">
+            
+                  <span class="badge badge-pill badge-float badge-float-outside badge-primary text-uppercase"> Output </span>
+
+                  <div class="row mb-0">
+                  
+                    <div class="col-1">
+                      <svg class="" width="24" height="32" viewBox="0 3 24 24"><path fill="#335eea" d="M10,10H3V4A1,1,0,0,1,4,3h6ZM21,4a1,1,0,0,0-1-1H14v7h7ZM4,21h6V14H3v6A1,1,0,0,0,4,21Zm17-1V14H14v7h6A1,1,0,0,0,21,20Z"/></svg>
+                    </div>
+                    <div class="col-10 pl-3 h5 font-weight-bold text-gray-700">
+                      Categories
+                    </div>
+                    </div>
+                    <fieldset disabled>
+                      <span style="cursor: auto;"
+                        class="btn btn-outline-primary btn-white btn-block text-black text-left shadow-light mb-4">
+                  
+                      <div class="row align-items-center">
+                  
+                  
+                        <div class="col-12">
+                          <div class="row">
+                  
+                            <div class="col-12">
+                              Consumer-electronics, electronics, hardware, ...
+                            </div>
+                          </div>
+                        </div>
+                  
+                      </div> <!-- row-->
+                    </span>
+                  </fieldset>
+                  
+                  <div class="row mb-0">
+                  
+                    <div class="col-1">
+                      <svg class="" width="24" height="32" viewBox="0 3 24 24"><path fill="#335eea" d="M21,5H3A1,1,0,0,0,2,6V18a1,1,0,0,0,1,1H21a1,1,0,0,0,1-1V6A1,1,0,0,0,21,5ZM4,17V14a3,3,0,0,1,3,3Zm0-7V7H7A3,3,0,0,1,4,10Zm8,4.5A2.5,2.5,0,1,1,14.5,12,2.5,2.5,0,0,1,12,14.5ZM20,17H17a3,3,0,0,1,3-3Zm0-7a3,3,0,0,1-3-3h3Z"/></svg>
+                    </div>
+                    <div class="col-10 pl-3 h5 font-weight-bold text-gray-700">
+                      Funding data
+                    </div>
+                    </div>
+                    <fieldset disabled>
+                      <span style="cursor: auto;"
+                        class="btn btn-outline-primary btn-white btn-block text-black text-left shadow-light mb-4">
+                  
+                      <div class="row align-items-center">
+                  
+                  
+                        <div class="col-12">
+                          <div class="row">
+                  
+                            <div class="col-12 pb-2 border-bottom">
+                              <span class="badge text-uppercase badge-secondary-soft mr-2">funding_type</span> Post-IPO Debt
+                            </div>
+
+                            <div class="col-12 pb-2 pt-2 border-bottom">
+                              <span class="badge text-uppercase badge-secondary-soft mr-2">money_raised</span> $5,000,000,000,-
+                            </div>
+
+                            <div class="col-12 pb-2 pt-2 border-bottom">
+                              <span class="badge text-uppercase badge-secondary-soft mr-2">number_of_investor</span> 1
+                            </div>
+
+                            <div class="col-12 pt-2">
+                              <span class="badge text-uppercase badge-secondary-soft mr-2">and more!</span> 
+                            </div>
+
+                          </div>
+                        </div>
+                  
+                      </div> <!-- row-->
+                    </span>
+                  </fieldset>
+
+                  <div class="row mb-0">
+                  
+                    <div class="col-1">
+                      <svg class="" width="28" height="32" viewBox="0 3 24 24"><path d="M12.374 19.939l5.849-8.773A.75.75 0 0017.599 10H13V4.477a.75.75 0 00-1.374-.416l-5.849 8.773A.75.75 0 006.401 14H11v5.523a.75.75 0 001.374.416z" fill="#335EEA"></path></svg>
+                    </div>
+                    <div class="col-10 pl-3 h5 font-weight-bold text-gray-700">
+                      Extra
+                    </div>
+                    </div>
+                    <fieldset disabled>
+                      <span style="cursor: auto;"
+                        class="btn btn-outline-primary btn-white btn-block text-black text-left shadow-light mb-6">
+                  
+                      <div class="row align-items-center">
+                  
+                  
+                        <div class="col-12">
+                          <div class="row">
+                  
+                            <div class="col-12 pb-2 border-bottom">
+                              <span class="badge text-uppercase badge-secondary-soft mr-2">ipo_status</span> Public
+                            </div>
+
+                            <div class="col-12 pb-2 pt-2 border-bottom">
+                              <span class="badge text-uppercase badge-secondary-soft mr-2">crunchbase_rank</span> 23
+                            </div>
+
+                            <div class="col-12 pb-2 pt-2 border-bottom">
+                              <span class="badge text-uppercase badge-secondary-soft mr-2">company_type</span> For profit
+                            </div>
+
+                            <div class="col-12 pt-2">
+                              <span class="badge text-uppercase badge-secondary-soft mr-2">and more!</span> 
+                            </div>
+
+                          </div>
+                        </div>
+                  
+                      </div> <!-- row-->
+                    </span>
+                  </fieldset>
+            
+            
+                  <!-- Code block -->
+                  <div class="highlight-block text-left mb-3">
+            
+                    <!-- Controls -->
+                    <div class="d-flex">
+                      <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                      <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                      <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                    </div>
+            
+                    <pre style="height: 280px;">
+<code class="language-python">                        
+  {
+    "linkedin_internal_id": "162479",
+    "description": "We’re a diverse collective of thinkers and doers, continually reimagining what’s possible to help us all do what we love in new ways. And the same innovation that goes into our products also applies to our practices — strengthening our commitment to leave the world better than we found it. This is where your work can make a difference in people’s lives. Including your own.Apple is an equal opportunity employer that is committed to inclusion and diversity. Visit apple.com/careers to learn more.",
+    "website": "http://www.apple.com/careers",
+    "industry": "Consumer Electronics",
+    "company_size": [
+      10001,
+      null
+    ],
+    "company_size_on_linkedin": 567686,
+    "hq": {
+      "country": "US",
+      "city": "Cupertino",
+      "postal_code": "95014",
+      "line_1": "1 Apple Park Way",
+      "is_hq": true,
+      "state": "California"
+    },
+    "company_type": "PUBLIC_COMPANY",
+    "founded_year": 1976,
+    "specialities": [
+      "Innovative Product Development",
+      "World-Class Operations",
+      "Retail",
+      "Telephone Support"
+    ],
+    "locations": [
+      {
+        "country": "US",
+        "city": "Cupertino",
+        "postal_code": "95014",
+        "line_1": "1 Apple Park Way",
+        "is_hq": true,
+        "state": "California"
+      }
+    ],
+    "name": "Apple",
+    "tagline": null,
+    "universal_name_id": "apple",
+    "profile_pic_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/apple/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20221110%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20221110T024602Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=a306840fe781fc10965efd0a7d9b483b5fa56d71f8322547d8703ff636685da5",
+    "background_cover_image_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/apple/cover?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20221110%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20221110T024602Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=b0080adf94bb4eac3dbb1e24669809f95b8b61e6f18326be14e524174b731acc",
+    "search_id": "162479",
+    "similar_companies": [],
+    "updates": [],
+    "follower_count": 17494129,
+    "acquisitions": {
+      "acquired": [
+        {
+          "linkedin_profile_url": "https://www.linkedin.com/company/ai-music",
+          "crunchbase_profile_url": "https://www.crunchbase.com/organization/ai-music",
+          "announced_date": {
+            "day": 7,
+            "month": 2,
+            "year": 2022
+          },
+          "price": null
+        },
+        {
+          "linkedin_profile_url": "https://www.linkedin.com/company/credit-kudos",
+          "crunchbase_profile_url": "https://www.crunchbase.com/organization/credit-kudos",
+          "announced_date": {
+            "day": 23,
+            "month": 3,
+            "year": 2022
+          },
+          "price": 150000000
+        },
+        {
+          "linkedin_profile_url": "https://www.linkedin.com/company/fleetsmith",
+          "crunchbase_profile_url": "https://www.crunchbase.com/organization/fleetsmith",
+          "announced_date": {
+            "day": 24,
+            "month": 6,
+            "year": 2020
+          },
+          "price": null
+        },
+        {
+          "linkedin_profile_url": null,
+          "crunchbase_profile_url": "https://www.crunchbase.com/organization/inductiv",
+          "announced_date": {
+            "day": 27,
+            "month": 5,
+            "year": 2020
+          },
+          "price": null
+        },
+        {
+          "linkedin_profile_url": "https://www.linkedin.com/company/joby-aviation",
+          "crunchbase_profile_url": "https://www.crunchbase.com/organization/joby-aviation",
+          "announced_date": {
+            "day": 1,
+            "month": 4,
+            "year": 2022
+          },
+          "price": null
+        },
+        {
+          "linkedin_profile_url": "https://www.linkedin.com/company/mobeewave",
+          "crunchbase_profile_url": "https://www.crunchbase.com/organization/mobeewave",
+          "announced_date": {
+            "day": 1,
+            "month": 8,
+            "year": 2020
+          },
+          "price": 100000000
+        },
+        {
+          "linkedin_profile_url": "https://www.linkedin.com/company/nextvr",
+          "crunchbase_profile_url": "https://www.crunchbase.com/organization/nextvr",
+          "announced_date": {
+            "day": 4,
+            "month": 4,
+            "year": 2020
+          },
+          "price": 100000000
+        },
+        {
+          "linkedin_profile_url": null,
+          "crunchbase_profile_url": "https://www.crunchbase.com/organization/paws-inc",
+          "announced_date": {
+            "day": 30,
+            "month": 8,
+            "year": 2021
+          },
+          "price": null
+        },
+        {
+          "linkedin_profile_url": null,
+          "crunchbase_profile_url": "https://www.crunchbase.com/organization/scout-fm",
+          "announced_date": {
+            "day": 24,
+            "month": 9,
+            "year": 2020
+          },
+          "price": null
+        },
+        {
+          "linkedin_profile_url": "https://www.linkedin.com/company/sourcedna",
+          "crunchbase_profile_url": "https://www.crunchbase.com/organization/sourcedna",
+          "announced_date": {
+            "day": 6,
+            "month": 5,
+            "year": 2021
+          },
+          "price": null
+        },
+        {
+          "linkedin_profile_url": "https://www.linkedin.com/company/7943613",
+          "crunchbase_profile_url": "https://www.crunchbase.com/organization/spaces-6",
+          "announced_date": {
+            "day": 24,
+            "month": 8,
+            "year": 2020
+          },
+          "price": null
+        },
+        {
+          "linkedin_profile_url": "https://www.linkedin.com/company/the-dark-sky-company",
+          "crunchbase_profile_url": "https://www.crunchbase.com/organization/the-dark-sky-company",
+          "announced_date": {
+            "day": 31,
+            "month": 3,
+            "year": 2020
+          },
+          "price": null
+        },
+        {
+          "linkedin_profile_url": "https://www.linkedin.com/company/vilynx",
+          "crunchbase_profile_url": "https://www.crunchbase.com/organization/vilynx",
+          "announced_date": {
+            "day": 27,
+            "month": 10,
+            "year": 2020
+          },
+          "price": 50000000
+        },
+        {
+          "linkedin_profile_url": "https://www.linkedin.com/company/scream-technologies",
+          "crunchbase_profile_url": "https://www.crunchbase.com/organization/voysis",
+          "announced_date": {
+            "day": 3,
+            "month": 4,
+            "year": 2020
+          },
+          "price": null
+        }
+      ],
+      "acquired_by": null
+    },
+    "exit_data": [
+      {
+        "linkedin_profile_url": "https://www.linkedin.com/company/adobe",
+        "crunchbase_profile_url": "https://www.crunchbase.com/organization/adobe-systems",
+        "name": "Adobe"
+      },
+      {
+        "linkedin_profile_url": "https://www.linkedin.com/company/apple",
+        "crunchbase_profile_url": "https://www.crunchbase.com/organization/apple",
+        "name": "Apple"
+      },
+      {
+        "linkedin_profile_url": "https://www.linkedin.com/company/3678",
+        "crunchbase_profile_url": "https://www.crunchbase.com/organization/corning",
+        "name": "Corning"
+      },
+      {
+        "linkedin_profile_url": "https://www.linkedin.com/company/didiglobal",
+        "crunchbase_profile_url": "https://www.crunchbase.com/organization/didi-dache",
+        "name": "Didi"
+      },
+      {
+        "linkedin_profile_url": "https://www.linkedin.com/company/elan-microelectronics",
+        "crunchbase_profile_url": "https://www.crunchbase.com/organization/elan-microelectronics",
+        "name": "ELAN Microelectronics"
+      },
+      {
+        "linkedin_profile_url": "https://www.linkedin.com/company/1328664",
+        "crunchbase_profile_url": "https://www.crunchbase.com/organization/emagin",
+        "name": "eMagin"
+      },
+      {
+        "linkedin_profile_url": "https://www.linkedin.com/company/163813",
+        "crunchbase_profile_url": "https://www.crunchbase.com/organization/finisar",
+        "name": "Finisar"
+      },
+      {
+        "linkedin_profile_url": "https://www.linkedin.com/company/global-online-devices",
+        "crunchbase_profile_url": "https://www.crunchbase.com/organization/global-online-devices",
+        "name": "God-i"
+      },
+      {
+        "linkedin_profile_url": "https://www.linkedin.com/company/ii-vi-incorporated",
+        "crunchbase_profile_url": "https://www.crunchbase.com/organization/ii-vi",
+        "name": "II-VI"
+      },
+      {
+        "linkedin_profile_url": "https://www.linkedin.com/company/imagination-technologies",
+        "crunchbase_profile_url": "https://www.crunchbase.com/organization/imagination-technologies",
+        "name": "Imagination Technologies"
+      },
+      {
+        "linkedin_profile_url": null,
+        "crunchbase_profile_url": "https://www.crunchbase.com/organization/kanisa-inc",
+        "name": "Kanisa"
+      },
+      {
+        "linkedin_profile_url": "https://www.linkedin.com/company/zomato",
+        "crunchbase_profile_url": "https://www.crunchbase.com/organization/zomato",
+        "name": "Zomato"
+      }
+    ],
+    "extra": {
+      "ipo_status": "Public",
+      "crunchbase_rank": 23,
+      "founding_date": {
+        "day": 1,
+        "month": 4,
+        "year": 1976
+      },
+      "operating_status": "Active",
+      "company_type": "For Profit",
+      "contact_email": null,
+      "phone_number": "408-996-1010",
+      "facebook_id": "apple",
+      "twitter_id": "apple",
+      "number_of_funding_rounds": null,
+      "total_funding_amount": 6200000000,
+      "stock_symbol": "NASDAQ:AAPL",
+      "ipo_date": null,
+      "number_of_lead_investors": 3,
+      "number_of_investors": 7,
+      "total_fund_raised": 375000000,
+      "number_of_investments": null,
+      "number_of_lead_investments": null,
+      "number_of_exits": null,
+      "number_of_acquisitions": null
+    },
+    "funding_data": [
+      {
+        "funding_type": "Post-IPO Debt",
+        "money_raised": 5000000000,
+        "announced_date": {
+          "day": 6,
+          "month": 9,
+          "year": 2017
+        },
+        "number_of_investor": null,
+        "investor_list": []
+      },
+      {
+        "funding_type": "Post-IPO Equity",
+        "money_raised": 1000000000,
+        "announced_date": {
+          "day": 16,
+          "month": 5,
+          "year": 2016
+        },
+        "number_of_investor": 1,
+        "investor_list": [
+          {
+            "linkedin_profile_url": "https://www.linkedin.com/company/berkshire-hathaway",
+            "name": "Berkshire Hathaway",
+            "type": "organization"
+          }
+        ]
+      },
+      {
+        "funding_type": "Post-IPO Equity",
+        "money_raised": 150000000,
+        "announced_date": {
+          "day": 1,
+          "month": 8,
+          "year": 1997
+        },
+        "number_of_investor": 1,
+        "investor_list": [
+          {
+            "linkedin_profile_url": "https://www.linkedin.com/company/microsoft",
+            "name": "Microsoft",
+            "type": "organization"
+          }
+        ]
+      },
+      {
+        "funding_type": "Pre Seed Round",
+        "money_raised": 150000,
+        "announced_date": {
+          "day": 1,
+          "month": 1,
+          "year": 2022
+        },
+        "number_of_investor": 2,
+        "investor_list": [
+          {
+            "linkedin_profile_url": "https://www.linkedin.com/company/apple",
+            "name": "Apple",
+            "type": "organization"
+          },
+          {
+            "linkedin_profile_url": null,
+            "name": "Confidential Confidential",
+            "type": "person"
+          }
+        ]
+      },
+      {
+        "funding_type": "Private Equity Round",
+        "money_raised": 30000000,
+        "announced_date": {
+          "day": 15,
+          "month": 6,
+          "year": 2022
+        },
+        "number_of_investor": 1,
+        "investor_list": [
+          {
+            "linkedin_profile_url": "https://www.linkedin.com/company/interscoperecords",
+            "name": "Interscope Records",
+            "type": "organization"
+          }
+        ]
+      },
+      {
+        "funding_type": "Private Equity Round",
+        "money_raised": null,
+        "announced_date": {
+          "day": 12,
+          "month": 7,
+          "year": 2017
+        },
+        "number_of_investor": null,
+        "investor_list": []
+      },
+      {
+        "funding_type": "Seed Round",
+        "money_raised": 80000,
+        "announced_date": {
+          "day": 15,
+          "month": 5,
+          "year": 1977
+        },
+        "number_of_investor": 2,
+        "investor_list": [
+          {
+            "linkedin_profile_url": "https://www.linkedin.com/company/matrix-partners",
+            "name": "Matrix Partners",
+            "type": "organization"
+          },
+          {
+            "linkedin_profile_url": null,
+            "name": "Mike Markkula",
+            "type": "person"
+          }
+        ]
+      },
+      {
+        "funding_type": "Seed Round",
+        "money_raised": 150000,
+        "announced_date": {
+          "day": 4,
+          "month": 5,
+          "year": 1978
+        },
+        "number_of_investor": 2,
+        "investor_list": [
+          {
+            "linkedin_profile_url": "https://www.linkedin.com/company/sequoia",
+            "name": "Sequoia Capital",
+            "type": "organization"
+          },
+          {
+            "linkedin_profile_url": "https://www.linkedin.com/company/venrock",
+            "name": "Venrock",
+            "type": "organization"
+          }
+        ]
+      }
+    ],
+    "categories": [
+      "consumer-electronics",
+      "electronics",
+      "hardware",
+      "mobile-devices",
+      "operating-systems",
+      "retail",
+      "software",
+      "wearables"
+    ]
+  }
+              
+                                </code></pre>
+            
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+          
+  
+      <div class="row justify-content-center">
+          <div class="text-center mt-6">
+              <button class="btn btn-primary lift mr-md-4 mr-2">
+                  Get Trial API Key
+              </button>
+  
+              <a class="btn btn-primary-soft lift" href="#!">
+                  Read API Docs for Company Lookup Endpoint
+              </a>
+          </div>
+  
+      </div>
+
     </div> <!-- container heading-->
+
 
     </section>
 
