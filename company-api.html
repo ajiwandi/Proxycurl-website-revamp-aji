@@ -261,7 +261,7 @@
 
     <!-- FIRST FOLD
     ================================================== -->
-    <section class="pt-8 pt-md-12 pb-10 pb-md-12 border-bottom">
+    <section class="pt-8 pt-md-10 pb-10 pb-md-12 border-bottom">
 
       <div class="container">
         <div class="row justify-content-center">
@@ -419,7 +419,7 @@
                       <pre>
 <code class="language-python">                        
   {
-    "url": "https://sg.linkedin.com/company/apple"
+    "url": "https://linkedin.com/company/apple"
   }
                                   </code></pre>
               
@@ -1097,13 +1097,436 @@
               </button>
   
               <a class="btn btn-primary-soft lift" href="#!">
-                  Read API Docs for Company Lookup Endpoint
+                  Read API Docs for Company Profile Endpoint
               </a>
           </div>
   
       </div>
 
-    </div> <!-- container heading-->
+    </div> <!-- container Company Profile Endpoint-->
+
+    <div class="container pb-14">
+      <div class="row justify-content-center mb-8">
+  
+          <div class="col-12 col-md-8 col-lg-10">
+  
+              <h2 class="display-4 mb-2 text-center">
+                Employee Listing Endpoint
+              </h2>
+  
+              <p class="text-muted lead text-center">
+                List past or present employees of any target company
+              </p>
+  
+          </div>
+          
+      </div>
+      
+          <div class="row justify-content-between">
+          
+            <div class="col-12 col-md-5">
+              <div class="card shadow-light">
+                <div class="card-body">
+                  <span class="badge badge-pill badge-float badge-float-outside badge-info text-uppercase"> Input </span>
+          
+                  <fieldset disabled>
+                    <span style="cursor: auto;" class="btn btn-white btn-block shadow-lg text-gray-700 text-left">
+                      linkedin.com/company/apple
+                    </span>
+                  </fieldset>
+          
+                  <!--arrow-->
+                  <div class="text-center mt-n2">
+                    <span class="badge badge-lg badge-rounded-circle bg-info text-white">
+                      <i class="fe fe-arrow-down"></i>
+                    </span>
+                  </div>
+          
+                  <!-- Code block -->
+                  <div class="highlight-block text-left mt-n2 mb-3">
+          
+                    <!-- Controls -->
+                    <div class="d-flex">
+                      <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                      <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                      <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                    </div>
+          
+                    <pre>
+                                  <code class="language-python">
+  curl \ -G \ -H "Authorization: Bearer ${YOUR_API_KEY}" \ 'https://nubela.co/proxycurl/api/linkedin/company' \ --data-urlencode 'url=https://www.linkedin.com/company/apple/' \ --data-urlencode 'resolve_numeric_id=true' \ --data-urlencode 'categories=include' \ --data-urlencode 'funding_data=include' \ --data-urlencode 'extra=include' \ --data-urlencode 'exit_data=include' \ --data-urlencode 'acquisitions=include' \ --data-urlencode 'use_cache=if-present'   
+                              </code></pre>
+          
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col text-center d-md-block d-lg-block d-xl-block d-none d-sm-none mt-6">
+              <h1 class="display-3 mb-0">
+                <i class="fe fe-arrow-right"></i>
+              </h1>
+            </div>
+
+            <div class="col text-center d-sm-block d-md-none d-lg-none d-xl-none">
+              <h1 class="display-3 mb-0">
+                <i class="fe fe-arrow-down"></i>
+              </h1>
+            </div>
+          
+          
+            <div class="col-12 col-md-6">
+              <div class="card shadow-light">
+                <div class="card-body">
+            
+                  <span class="badge badge-pill badge-float badge-float-outside badge-primary text-uppercase"> Output </span>
+
+                  <div class="row mb-13">
+                  
+                    <div class="col-1">
+                      <svg class="" width="24" height="32" viewBox="0 3 24 24">
+                        <path fill="#335eea"
+                          d="M7,11a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,7,11Zm0,6a5,5,0,0,0-5,5H12A5,5,0,0,0,7,17Zm10-1a2.5,2.5,0,1,0-2.5-2.5A2.5,2.5,0,0,0,17,16Zm0,1a5,5,0,0,0-5,5H22A5,5,0,0,0,17,17ZM14.5,4.5A2.5,2.5,0,1,0,12,7,2.5,2.5,0,0,0,14.5,4.5ZM11.449,13h1.1A4.488,4.488,0,0,1,15.36,9.32a4.936,4.936,0,0,0-6.72,0A4.488,4.488,0,0,1,11.449,13Z" />
+                      </svg>
+                    </div>
+                    <div class="col-10 pl-3 h5 font-weight-bold text-gray-700">
+                      List of employee
+                    </div>
+                  </div>
+                  
+                  <div class="mb-n12 pb-5">
+                    <fieldset disabled>
+                      <span style="cursor: auto;" class="btn btn-outline-secondary btn-white btn-block text-black text-left shadow-light">
+                  
+                        <div class="row align-items-center">
+                  
+                  
+                          <div class="col-12">
+                            <div class="row">
+                  
+                              <div class="col-1">
+                                <svg class="" width="16" height="16" viewBox="0 2 24 24">
+                                  <path fill="#506690"
+                                    d="m12,12c-2.7614,0-5-2.2386-5-5s2.2386-5,5-5,5,2.2386,5,5-2.2386,5-5,5ZM3,20v1c0,.5522.4477,1,1,1h16c.5523,0,1-.4478,1-1v-1c0-2.2092-1.7908-4-4-4H7c-2.2092,0-4,1.7908-4,4Z">
+                                  </path>
+                                </svg>
+                  
+                              </div>
+                              <div class="col-10 pl-1">
+                                <p class="mb-0 text-gray-700">linkedin.com/in/qibinzhu</p>
+                              </div>
+                            </div>
+                          </div>
+                  
+                        </div> <!-- row-->
+                      </span>
+                    </fieldset>
+                  </div> <!-- list 4-->
+                  
+                  <div class="">
+                    <fieldset disabled>
+                      <span style="cursor: auto;" class="btn btn-outline-secondary btn-white btn-block text-black text-left shadow-light">
+                  
+                        <div class="row align-items-center">
+                  
+                  
+                          <div class="col-12">
+                            <div class="row">
+                  
+                              <div class="col-1">
+                                <svg class="" width="16" height="16" viewBox="0 2 24 24">
+                                  <path fill="#506690"
+                                    d="m12,12c-2.7614,0-5-2.2386-5-5s2.2386-5,5-5,5,2.2386,5,5-2.2386,5-5,5ZM3,20v1c0,.5522.4477,1,1,1h16c.5523,0,1-.4478,1-1v-1c0-2.2092-1.7908-4-4-4H7c-2.2092,0-4,1.7908-4,4Z">
+                                  </path>
+                                </svg>
+                  
+                              </div>
+                              <div class="col-10 pl-1">
+                                <p class="mb-0 text-gray-700">linkedin.com/in/vishalmorde</p>
+                              </div>
+                            </div>
+                          </div>
+                  
+                        </div> <!-- row-->
+                      </span>
+                    </fieldset>
+                  </div> <!-- list 3-->
+
+                  <div class="mt-n12 pt-5">
+                    <fieldset disabled>
+                      <span style="cursor: auto;" class="btn btn-outline-secondary btn-white btn-block text-black text-left shadow-light">
+                  
+                        <div class="row align-items-center">
+                  
+                  
+                          <div class="col-12">
+                            <div class="row">
+                  
+                              <div class="col-1">
+                                <svg class="" width="16" height="16" viewBox="0 2 24 24">
+                                  <path fill="#506690"
+                                    d="m12,12c-2.7614,0-5-2.2386-5-5s2.2386-5,5-5,5,2.2386,5,5-2.2386,5-5,5ZM3,20v1c0,.5522.4477,1,1,1h16c.5523,0,1-.4478,1-1v-1c0-2.2092-1.7908-4-4-4H7c-2.2092,0-4,1.7908-4,4Z">
+                                  </path>
+                                </svg>
+                  
+                              </div>
+                              <div class="col-10 pl-1">
+                                <p class="mb-0 text-gray-700">linkedin.com/in/williampli</p>
+                              </div>
+                            </div>
+                          </div>
+                  
+                        </div> <!-- row-->
+                      </span>
+                    </fieldset>
+                  </div> <!--list 2-->
+                  
+                  <div class="mt-n12 mb-12 pb-6 pt-5">
+                    <fieldset disabled>
+                      <span style="cursor: auto;" class="btn btn-outline-primary btn-white btn-block text-black text-left shadow-light">
+                  
+                        <div class="row align-items-center">
+                  
+                  
+                          <div class="col-12">
+                            <div class="row">
+                  
+                              <div class="col-1">
+                                <svg class="" width="16" height="16" viewBox="0 2 24 24">
+                                  <path fill="black"
+                                    d="m12,12c-2.7614,0-5-2.2386-5-5s2.2386-5,5-5,5,2.2386,5,5-2.2386,5-5,5ZM3,20v1c0,.5522.4477,1,1,1h16c.5523,0,1-.4478,1-1v-1c0-2.2092-1.7908-4-4-4H7c-2.2092,0-4,1.7908-4,4Z">
+                                  </path>
+                                </svg>
+                  
+                              </div>
+                              <div class="col-10 pl-1">
+                                <p class="mb-0">linkedin.com/in/pdking</p>
+                              </div>
+                            </div>
+                          </div>
+                  
+                        </div> <!-- row-->
+                      </span>
+                    </fieldset>
+                  </div> <!--list 1-->
+
+                  <div class="text-left mb-6">
+                    <span class="badge text-uppercase badge-secondary-soft badge-lg"> 287,725 more</span>
+                  </div> 
+            
+            
+                  <!-- Code block -->
+                  <div class="highlight-block text-left mb-3">
+            
+                    <!-- Controls -->
+                    <div class="d-flex">
+                      <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                      <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                      <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                    </div>
+            
+                    <pre style="height: 280px;">
+<code class="language-python">                        
+  {
+    "employees": [
+      {
+        "profile_url": "https://www.linkedin.com/in/amanda-chew-jia-ying-9aa06426",
+        "profile": null
+      },
+      {
+        "profile_url": "https://www.linkedin.com/in/cathy-tan-883197b6",
+        "profile": null
+      },
+      {
+        "profile_url": "https://www.linkedin.com/in/charmaine-wee-hospitality-director",
+        "profile": null
+      },
+      {
+        "profile_url": "https://www.linkedin.com/in/jacky-n-24713822",
+        "profile": null
+      },
+      {
+        "profile_url": "https://www.linkedin.com/in/joven-sim-976721a1",
+        "profile": null
+      }
+    ],
+    "next_page": "https://nubela.co/proxycurl/api/linkedin/company/employees/?url=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F8m-real-estate-singapore%2F&use_cache=if-present&page_size=5&employment_status=current&resolve_numeric_id=false&after=lautianwei"
+  }         
+              
+                                </code></pre>
+            
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+          
+  
+      <div class="row justify-content-center">
+          <div class="text-center mt-6">
+              <button class="btn btn-primary lift mr-md-4 mr-2">
+                  Get Trial API Key
+              </button>
+  
+              <a class="btn btn-primary-soft lift mr-md-4 mr-2" href="#!">
+                Read API Docs for Employee Listing Endpoint
+              </a>
+              <a class="btn btn-primary-soft lift" href="#!">
+                Read API Docs for Employee Search Endpoint
+              </a>
+          </div>
+  
+      </div>
+
+    </div> <!-- container Employee Listing Endpoint-->
+
+    <div class="container pb-14">
+      <div class="row justify-content-center mb-8">
+  
+          <div class="col-12 col-md-8 col-lg-10">
+  
+              <p class="h2 mb-2 text-center">
+                <span class="display-3 pr-3">Company Profile Picture Endpoint</span> <span class="badge badge-pill badge-success badge-float">FREE</span>
+              </p>
+  
+              <p class="text-muted lead text-center">
+                Get the logo of a company
+              </p>
+  
+          </div>
+          
+      </div>
+      
+          <div class="row justify-content-between">
+          
+            <div class="col-12 col-md-5">
+              <div class="card shadow-light">
+                <div class="card-body">
+                  <span class="badge badge-pill badge-float badge-float-outside badge-info text-uppercase"> Input </span>
+          
+                  <fieldset disabled>
+                    <span style="cursor: auto;" class="btn btn-white btn-block shadow-lg text-gray-700 text-left">
+                      linkedin.com/company/apple
+                    </span>
+                  </fieldset>
+          
+                  <!--arrow-->
+                  <div class="text-center mt-n2">
+                    <span class="badge badge-lg badge-rounded-circle bg-info text-white">
+                      <i class="fe fe-arrow-down"></i>
+                    </span>
+                  </div>
+          
+                  <!-- Code block -->
+                  <div class="highlight-block text-left mt-n2 mb-3">
+          
+                    <!-- Controls -->
+                    <div class="d-flex">
+                      <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                      <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                      <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                    </div>
+          
+                    <pre>
+                                  <code class="language-python">
+curl \ -G \ -H "Authorization: Bearer ${YOUR_API_KEY}" \ 'https://nubela.co/proxycurl/api/linkedin/company/resolve' \ --data-urlencode 'company_domain=http://apple.com' \    
+                              </code></pre>
+          
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col text-center d-md-block d-lg-block d-xl-block d-none d-sm-none mt-6">
+              <h1 class="display-3 mb-0">
+                <i class="fe fe-arrow-right"></i>
+              </h1>
+            </div>
+
+            <div class="col text-center d-sm-block d-md-none d-lg-none d-xl-none">
+              <h1 class="display-3 mb-0">
+                <i class="fe fe-arrow-down"></i>
+              </h1>
+            </div> <!-- input-->
+          
+          
+            <div class="col-12 col-md-6">
+              <div class="card shadow-light">
+                <div class="card-body">
+            
+                  <span class="badge badge-pill badge-float badge-float-outside badge-primary text-uppercase"> Output </span>
+                  <div class="row mb-0">
+                    
+                  <div class="col-1">
+                    <svg class="" width="24" height="32" viewBox="0 3 24 24"><path fill="#335eea" d="M20,3H4A1,1,0,0,0,3,4V20a1,1,0,0,0,1,1H20a1,1,0,0,0,1-1V4A1,1,0,0,0,20,3ZM8,6A2,2,0,1,1,6,8,2,2,0,0,1,8,6ZM19,19H5V15.4L8,13l3,3,5-5,3,2.4Z"/></svg>
+                  </div>
+                  <div class="col-10 pl-3 h5 font-weight-bold text-gray-700">
+                    Profile picture of a company
+                  </div>
+                  </div>
+                  <fieldset disabled>
+                    <span style="cursor: auto;"
+                      class="btn btn-outline-primary btn-white btn-block shadow-lg text-black text-left mb-5">
+            
+                      <div class="row align-items-center">
+
+            
+                        <div class="col-12">
+                          <div class="row">
+                        
+                            <div class="col-12">
+                              linkedin.com/company/apple
+                            </div>
+                          </div>
+                        </div>
+            
+                      </div> <!-- row-->
+                    </span>
+                  </fieldset>
+            
+            
+                  <!-- Code block -->
+                  <div class="highlight-block text-left mb-3">
+            
+                    <!-- Controls -->
+                    <div class="d-flex">
+                      <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                      <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                      <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                    </div>
+            
+                    <pre>
+<code class="language-python">                        
+  {
+    "tmp_profile_pic_url": "http://localhost:4566/proxycurl-web-dev/company/apple/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Credential=%2F20220912%2F%2Fs3%2Faws4_request\u0026X-Amz-Date=20220912T065816Z\u0026X-Amz-Expires=1800\u0026X-Amz-SignedHeaders=host\u0026X-Amz-Signature=40e484b7b1a9c4fd712d99b658d68efb115d8b20be227c8d5c49fc62dfd4d480"
+  }
+                                </code></pre>
+            
+                  </div>
+                </div>
+              </div>
+            </div> <!-- output-->
+          
+          </div>
+          
+  
+      <div class="row justify-content-center">
+          <div class="text-center mt-6">
+              <button class="btn btn-primary lift mr-md-4 mr-2">
+                  Get Trial API Key
+              </button>
+  
+              <a class="btn btn-primary-soft lift" href="#!">
+                Read API Docs for Company Profile Picture Endpoint
+              </a>
+          </div>
+  
+      </div>
+
+  </div> <!-- container Company Profile Picture Endpoint-->
 
 
     </section>
