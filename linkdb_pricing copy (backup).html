@@ -28,7 +28,7 @@
 
 </head>
 
-<body class="bg-white">
+<body class="bg-light">
 
   <!-- ANNOUNCEMENT
     ================================================== -->
@@ -277,7 +277,7 @@
     <!-- Content -->
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-12 col-md-10 text-center">
+        <div class="col-12 col-md-10 col-lg-8 text-center">
 
           <!-- Heading -->
           <h1 class="display-2 text-white">
@@ -286,7 +286,7 @@
 
           <!-- Text -->
           <p class="lead text-white-80 mb-6 mb-md-4">
-            LinkDB can be segmented by country or by person/company data. We offer multiple financing options, enabling you to pay in monthly or quarterly installments. Updates are <span class="font-weight-bold"> not</span> included and are sold separately, <a href="#pricingupdate" data-toggle="smooth-scroll" class="text-white font-weight-bold"> see below</a>.
+            LinkDB pricing ranges from $9,000 to $45,000, excluding updates.
           </p>
 
         </div>
@@ -298,7 +298,7 @@
   <!-- SHAPE
     ================================================== -->
   <div class="position-relative">
-    <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+    <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
       <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor" />
       </svg>
@@ -308,7 +308,7 @@
   <!-- FIRST FOLD-->
   <!--  PRICING DARI PAK ROY edit-->
   <section class="mt-n8 mt-md-n14 pb-8 pb-md-11 border-bottom">
-    <div class="container-fluid px-xl-14 px-4">
+    <div class="container-fluid px-xl-12 px-4">
       <div class="card shadow-lg">
   
         <div class="card-body">
@@ -318,21 +318,24 @@
               <!-- Nav-->
               <nav class="pb-md-6 pb-4">
                 <div class="nav nav-pills nav-fill flex-column flex-sm-row" id="nav-tab" role="tablist">
-              
-                  <a class="font-weight-bold nav-item nav-link active pt-4" id="nav-onetime-tab" data-toggle="tab" href="#nav-onetime"
-                    role="tab" aria-controls="nav-onetime" aria-selected="true">
+
+                  <a class="font-weight-bold nav-item nav-link active pt-4" id="nav-onetime-tab" data-toggle="tab"
+                    href="#nav-onetime" role="tab" aria-controls="nav-onetime" aria-selected="true">
                     One-time Upfront
                     <p class="h6 font-weight-bold text-reset"> </p>
                   </a>
-                  <a class="font-weight-bold nav-item nav-link pt-4" id="nav-quarterly-tab" data-toggle="tab" href="#nav-quarterly"
-                    role="tab" aria-controls="nav-quarterly" aria-selected="false">Quarterly installments
+                  <a class="font-weight-bold nav-item nav-link pt-4" id="nav-monthly-tab" data-toggle="tab"
+                    href="#nav-monthly" role="tab" aria-controls="nav-monthly" aria-selected="false">Monthly Payment
                     <p class="h6 font-weight-bold text-reset"></p>
                   </a>
-                  <a class="font-weight-bold nav-item nav-link pt-4" id="nav-monthly-tab" data-toggle="tab" href="#nav-monthly"
-                    role="tab" aria-controls="nav-monthly" aria-selected="false">Monthly Installments
+                  <a class="font-weight-bold nav-item nav-link pt-4" id="nav-quarterly-tab" data-toggle="tab"
+                    href="#nav-quarterly" role="tab" aria-controls="nav-quarterly" aria-selected="false">Quarterly Payment
                     <p class="h6 font-weight-bold text-reset"></p>
                   </a>
-
+                  <a class="font-weight-bold nav-item nav-link pt-4" id="nav-updatecost-tab" data-toggle="tab"
+                    href="#nav-updatecost" role="tab" aria-controls="nav-updatecost" aria-selected="false">Update Cost
+                    <p class="h6 font-weight-bold text-reset"> </p>
+                  </a>
   
                 </div>
               </nav>
@@ -471,9 +474,9 @@
                 </div>
   
                 <!-- Content 2-->
-                <div class="table-responsive tab-pane fade" id="nav-quarterly" role="tabpanel"
-                  aria-labelledby="nav-quarterly-tab">
-                 
+                <div class="table-responsive tab-pane fade" id="nav-monthly" role="tabpanel"
+                  aria-labelledby="nav-monthly-tab">
+
                   <table class="table table-hover">
                   
                     <thead class="bg-light">
@@ -511,9 +514,7 @@
                             </div>
                           </div>
                         </td>
-                        <td class="col-3 h4 text-right font-weight-bold pr-9 pl-0">$15000<span class="text-gray-700 h5">/quarter</span>
-                          <p class="text-muted h6">4 quarters</p> 
-                        </td>
+                        <td class="col-3 h4 text-right font-weight-bold pr-9 pl-0">$7500</td>
                       </tr>
                       
                       <tr class="clickable" onclick="window.location='#!'">
@@ -565,9 +566,7 @@
                             </div>
                           </div>
                         </td>
-                        <td class="col-3 h4 text-right font-weight-bold pr-9 pl-0">$4000<span class="text-gray-700 h5">/quarter</span>
-                          <p class="text-muted h6">4 quarters</p>
-                        </td>
+                        <td class="col-3 h4 text-right font-weight-bold pr-9 pl-0">$2000</td>
                       </tr>
 
                       <tr class="clickable" onclick="window.location='#!'">
@@ -597,21 +596,20 @@
                             </div>
                           </div>
                         </td>
-                        <td class="col-3 h4 text-right font-weight-bold pr-9 pl-0">$22500<span class="text-gray-700 h5">/quarter</span>
-                          <p class="text-muted h6">4 quarters</p>
-                        </td>
+                        <td class="col-3 h4 text-right font-weight-bold pr-9 pl-0">$11500</td>
                       </tr>
 
                     </tbody>
-                  </table>       
+                  </table>        
 
                 </div>
-
+  
                 <!-- Content 3-->
-                <div class="table-responsive tab-pane fade" id="nav-monthly" role="tabpanel" aria-labelledby="nav-monthly-tab">
-                
+                <div class="table-responsive tab-pane fade" id="nav-quarterly" role="tabpanel"
+                  aria-labelledby="nav-quarterly-tab">
+                 
                   <table class="table table-hover">
-                
+                  
                     <thead class="bg-light">
                       <tr class="h3 text-gray-700">
                         <th scope="col" class="align-middle">Offering</th>
@@ -620,12 +618,11 @@
                         <th class="text-right align-middle pr-9" scope="col">Cost</th>
                       </tr>
                     </thead>
-                
+                  
                     <tbody>
                       <tr class="clickable table-primary" onclick="window.location='#!'">
                         <td class="col-3 font-weight-bold">
-                          <div> <span class="badge badge-secondary-soft text-uppercase font-weight-bold py-2 badge-pill">US People
-                              Profiles</span>
+                          <div> <span class="badge badge-secondary-soft text-uppercase font-weight-bold py-2 badge-pill">US People Profiles</span>
                           </div>
                         </td>
                         <td class="col-3 font-weight-bold">
@@ -648,15 +645,12 @@
                             </div>
                           </div>
                         </td>
-                        <td class="col-3 h4 text-right font-weight-bold pr-9 pl-0">$7500<span class="text-gray-700 h5">/mo</span>
-                          <p class="text-muted h6">12 months</p>
-                        </td>
+                        <td class="col-3 h4 text-right font-weight-bold pr-9 pl-0">$15000</td>
                       </tr>
-                
+                      
                       <tr class="clickable" onclick="window.location='#!'">
                         <td class="col-3 font-weight-bold">
-                          <div> <span class="badge badge-secondary-soft text-uppercase font-weight-bold py-2 badge-pill">Per Country
-                              People
+                          <div> <span class="badge badge-secondary-soft text-uppercase font-weight-bold py-2 badge-pill">Per Country People
                               Profiles</span>
                           </div>
                         </td>
@@ -676,23 +670,22 @@
                         </td>
                         <td class="col-3 h4 font-weight-bold text-right pr-9 pl-0">Depends</td>
                       </tr>
-                
+
                       <tr class="clickable" onclick="window.location='#!'">
                         <td class="col-3 font-weight-bold">
-                          <div> <span class="badge badge-secondary-soft text-uppercase font-weight-bold py-2 badge-pill">Global
-                              Companies</span>
+                          <div> <span class="badge badge-secondary-soft text-uppercase font-weight-bold py-2 badge-pill">Global Companies</span>
                           </div>
                         </td>
                         <td class="col-3 font-weight-bold text-muted">
-                          <div class="row">
-                            <div class="col-12 d-flex">
-                
+                        <div class="row">
+                          <div class="col-12 d-flex">
+
                               <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
                                 <i class="fe fe-x"></i>
                               </div>
-                
-                            </div>
+
                           </div>
+                        </div>
                         </td>
                         <td class="col-3 font-weight-bold">
                           <div class="row">
@@ -704,12 +697,9 @@
                             </div>
                           </div>
                         </td>
-                        <td class="col-3 h4 text-right font-weight-bold pr-9 pl-0">$2000<span class="text-gray-700 h5">/mo</span>
-                          <p class="text-muted h6">12 months</p>
-                
-                        </td>
+                        <td class="col-3 h4 text-right font-weight-bold pr-9 pl-0">$4000</td>
                       </tr>
-                
+
                       <tr class="clickable" onclick="window.location='#!'">
                         <td class="col-3 font-weight-bold">
                           <div> <span class="badge badge-secondary-soft text-uppercase font-weight-bold py-2 badge-pill">All Data</span>
@@ -725,7 +715,7 @@
                             </div>
                           </div>
                         </td>
-                
+                  
                         </td>
                         <td class="col-3 font-weight-bold">
                           <div class="row">
@@ -737,90 +727,16 @@
                             </div>
                           </div>
                         </td>
-                        <td class="col-3 h4 text-right font-weight-bold pr-9 pl-0">$11500<span class="text-gray-700 h5">/mo</span>
-                          <p class="text-muted h6">12 months</p>
-                
-                        </td>
+                        <td class="col-3 h4 text-right font-weight-bold pr-9 pl-0">$22500</td>
                       </tr>
-                
+
                     </tbody>
-                  </table>
-                
+                  </table>       
+
                 </div>
-  
-              </div>
-            </div>
-  
-            <!--  kotak kanan-->
-            <div class="tab-content col-12 col-md-3 text-center pt-md-10 pt-6 pb-0 pb-md-6 bg-light border"
-              id="nav-tabContent">
-  
-              <div class="tab-pane fade show active" id="nav-payasyougo" role="tabpanel"
-                aria-labelledby="nav-payasyougo-tab">
-  
-                <span class="badge badge-pill badge-primary-soft">
-                  <span class="h6 text-uppercase">One-time Upfront</span>
-                </span>
-  
-                <div class="justify-content-center pt-6 pb-4">
-                  <span class="display-2 font-weight-bold">$45000</span>
-                </div>
-  
-                <p class="mb-0 text-gray-700 font-weight-bold">
-                  US People Profiles
-                </p>
-  
-                <p class=" mb-6 text-muted small font-weight-bold">
-                  264+M profiles
-                </p>
-  
-                <a href="#!" class="btn btn-sm btn-block btn-primary mb-md-0 mb-6">
-                  Start now
-                </a>
-              </div>
-  
-            </div>
-  
-  
-          </div>
-        </div>
-      </div>
-    </div> 
-  </section>
-
-  <!-- SECOND FOLD-->
-  <section class="pt-8 pt-md-12 pb-6 pb-md-8 bg-light" id="pricingupdate">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-10 text-center">
-
-          <!-- Heading -->
-          <h1 class="display-3 text-primary">
-            LinkDB Update Pricing
-          </h1>
-
-          <!-- Text -->
-          <p class="lead text-muted mb-6 mb-md-4">
-            LinkDB updates are optional and sold separately from LinkDB. Updates are released and billed quarterly. To receive updates, you must commit to an update package from the start.
-          </p>
-
-        </div>
-      </div> <!-- / .row -->
-    </div> <!-- / .container -->
-
-  </section>
-  <!-- LinkDB PRICING UPDATE-->
-  <section class="pb-8 pb-md-11 border-bottom bg-light">
-    <div class="container-fluid px-xl-14 px-4">
-      <div class="card shadow-lg">
-  
-        <div class="card-body">
-          <div class="row">
-            <div class="col-12 col-md-9 mb-8 mb-md-0">
-  
   
                 <!-- Content 4-->
-                <div class="table-responsive"
+                <div class="table-responsive tab-pane fade" id="nav-updatecost" role="tabpanel"
                   aria-labelledby="nav-updatecost-tab">
 
                   <table class="table table-hover">
@@ -949,41 +865,49 @@
                   </table> 
 
                 </div>
-
+  
+              </div>
             </div>
   
             <!--  kotak kanan-->
-            <div class="col-12 col-md-3 text-center pt-md-9 pt-6 pb-0 pb-md-6 bg-light border">
+            <div class="tab-content col-12 col-md-3 text-center pt-md-10 pt-6 pb-0 pb-md-6 bg-light border"
+              id="nav-tabContent">
+  
+              <div class="tab-pane fade show active" id="nav-payasyougo" role="tabpanel"
+                aria-labelledby="nav-payasyougo-tab">
   
                 <span class="badge badge-pill badge-primary-soft">
-                  <span class="h6 text-uppercase">LinkDB Update pricing</span>
+                  <span class="h6 text-uppercase">One-time Upfront</span>
                 </span>
   
                 <div class="justify-content-center pt-6 pb-4">
-                  <span class="display-2 font-weight-bold">$4500</span>
+                  <span class="display-2 font-weight-bold">$45000</span>
                 </div>
   
                 <p class="mb-0 text-gray-700 font-weight-bold">
-                  US People Profiles
+                  People Profiles
                 </p>
   
                 <p class=" mb-6 text-muted small font-weight-bold">
-                  264+M profiles
+                  264+M profiles of people <br>based in the US
                 </p>
   
                 <a href="#!" class="btn btn-sm btn-block btn-primary mb-md-0 mb-6">
-                  Update now
+                  Start now
                 </a>
+              </div>
+  
             </div>
   
   
           </div>
         </div>
       </div>
-    </div> 
+    </div>
+  
   </section>
   
-  <!-- 4TH FOLD
+  <!-- 3RD FOLD
       ================================================== -->
   <section class="py-8 pb-8 py-md-12 border-bottom bg-white">
   
