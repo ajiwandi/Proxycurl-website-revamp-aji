@@ -64,14 +64,16 @@
     
                   <pre style="max-height: 116px;">
                                         <code class="language-python">
-params = {
-    'country': 'US',
-    'current_company_founded_after_year': '2015',
-    'current_company_employee_count_max': '5000',
-    'current_company_industry': 'Medical Equipment Manufacturing',
-    'current_company_type': 'PRIVATELY_HELD',
-    'current_role_title': '(?i)\\bceo\\b',
-} 
+curl \
+    -G \
+    -H "Authorization: Bearer ${YOUR_API_KEY}" \
+    'https://nubela.co/proxycurl/api/search/person' \
+    --data-urlencode 'current_company_founded_after_year=2014' \
+    --data-urlencode 'current_company_employee_count_max=5000' \
+    --data-urlencode 'current_company_industry=Medical Equipment Manufacturing' \
+    --data-urlencode 'current_company_type=PRIVATELY_HELD' \
+    --data-urlencode 'current_role_title=(?i)\bceo\b' \
+    --data-urlencode 'country=us'
                                     </code></pre>
     
                 </div>
@@ -152,7 +154,7 @@ params = {
                   </span>
 
                 <p class="text-gray-700 mb-3"> 
-                  Enrich candidates' profiles           
+                  Enrich candidates' profiles for more accurate hiring        
                 </p>
 
                 </div> 
@@ -180,7 +182,7 @@ params = {
                   </span>
 
                 <p class="text-gray-700 mb-3"> 
-                  vPlans range from no-commitment to an enterprise data set       
+                  Plans range from no-commitment to an enterprise data set       
                 </p>
 
                 </div>       
