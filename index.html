@@ -7,7 +7,8 @@
 
     <!-- Libs CSS -->
     <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.9.0/css/neu.min.css">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.9.0/css/neu.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />    
     <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
     <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
     <link rel="stylesheet" href="./assets/libs/choices.js/public/assets/styles/choices.min.css">
@@ -18,6 +19,7 @@
     <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="qube.css" type="text/css" />
+    
 
     <!-- Map -->
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
@@ -1298,7 +1300,6 @@
       </div> <!-- / .container -->    
     </section> <!-- CUSTOMER -->
 
-
     <!-- BANNER STORY & USE-CASE -->
     <section class="border-bottom bg-white">
       <div class="container pt-10 mb-11 mb-md-12">
@@ -1876,94 +1877,175 @@
       </div> <!-- / .container -->
     </section> 
 
-        <!-- TESTIMONIALS
+    <!-- TESTIMONIALS
     ================================================== -->
     <section class="py-8 py-md-11">
       <div class="container">
 
-        <h1 class="text-center mb-10 font-weight-bold">Here’s what our customers say</h1>
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <h1 class="text-center font-weight-bold">What our customers say about Proxycurl</h1>
+          </div>
+        </div>
 
-        <div class="row align-items-stretch">
-          <div class="col-12 col-md-4">
-
+        <div class="flickity mx-n4" data-flickity='{"pageDots": true,"cellAlign": "left", "prevNextButtons": false, "wrapAround": true, "imagesLoaded": true}'>
+          
+          <div class="col-12 col-md-4 mb-6 mt-6 mt-md-9" data-aos="fade-up">
+          
             <div class="card">
               <div class="card-body shadow-light rounded">
-            
-            <!-- Blockquote -->
-            <blockquote class="blockquote text-center">
-              
-              <!-- Text -->
-              <p class="mb-5 mb-md-7">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut sapien ex. Praesent quis maximus ex.”
-              </p>
-
-              <!-- Footer -->
-              <footer class="blockquote-footer mb-8 mb-md-0">
-                <div class="avatar avatar-xl mr-3">
-                  <img src="assets/img/avatars/avatar-2.jpg" class="avatar-img rounded-circle" alt="...">
-                </div> <span class="h6 text-uppercase">Bill Callan</span>
-              </footer>
-
-            </blockquote>
+          
+                <!-- Blockquote -->
+                <blockquote class="blockquote text-left">
+          
+                  <!-- Star-->
+                  <p>
+                    <i class="bi bi-star-fill text-warning"></i> <i class="bi bi-star-fill text-warning"></i> <i
+                      class="bi bi-star-fill text-warning"></i> <i class="bi bi-star-fill text-warning"></i> <i
+                      class="bi bi-star-fill text-warning"></i>
+                  </p>
+          
+                  <!-- Text -->
+                  <p class="lead mb-5 mb-md-7">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut sapien ex. Praesent quis maximus ex.”
+                  </p>
+          
+                  <!-- Footer -->
+                  <footer class="blockquote-footer mb-8 mb-md-0 align-items-center d-flex">
+                    <div class="avatar avatar-xl mr-3">
+                      <img src="assets/img/avatars/avatar-2.jpg" class="avatar-img rounded-circle" alt="...">
+                    </div>
+                    <div>
+                      <div class="h6 text-uppercase font-weight-bold text-black">Bill Callan</div>
+                      <div class="small text-uppercase">Acme.inc</div>
+                    </div>
+                  </footer>
+          
+                </blockquote>
+              </div>
             </div>
-            </div>
-
+          
           </div>
 
-          <div class="col-12 col-md-4">
-
+          <div class="col-12 col-md-4 mt-6 mt-md-9" data-aos="fade-up" data-aos-delay="50">
+          
             <div class="card">
               <div class="card-body shadow-light rounded">
-            
-            <!-- Blockquote -->
-            <blockquote class="blockquote text-center">
-              
-              <!-- Text -->
-              <p class="mb-5 mb-md-7">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut sapien ex. Praesent quis maximus ex.”
-              </p>
-
-              <!-- Footer -->
-              <footer class="blockquote-footer mb-8 mb-md-0">
-                <div class="avatar avatar-xl mr-3">
-                  <img src="assets/img/avatars/avatar-1.jpg" class="avatar-img rounded-circle" alt="...">
-                </div> <span class="h6 text-uppercase">Bill Callan</span>
-              </footer>
-
-            </blockquote>
+          
+                <!-- Blockquote -->
+                <blockquote class="blockquote text-left">
+          
+                  <!-- Star-->
+                  <p>
+                    <i class="bi bi-star-fill text-warning"></i> <i class="bi bi-star-fill text-warning"></i> <i
+                      class="bi bi-star-fill text-warning"></i> <i class="bi bi-star-fill text-warning"></i> <i
+                      class="bi bi-star-fill text-warning"></i>
+                  </p>
+          
+                  <!-- Text -->
+                  <p class="lead mb-5 mb-md-7">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut sapien ex. Praesent quis maximus ex.”
+                  </p>
+          
+                  <!-- Footer -->
+                  <footer class="blockquote-footer mb-8 mb-md-0 align-items-center d-flex">
+                    <div class="avatar avatar-xl mr-3">
+                      <img src="assets/img/avatars/avatar-5.jpg" class="avatar-img rounded-circle" alt="...">
+                    </div>
+                    <div>
+                      <div class="h6 text-uppercase font-weight-bold text-black">Patricia Well</div>
+                      <div class="small text-uppercase">Acme.inc</div>
+                    </div>
+                  </footer>
+          
+                </blockquote>
+              </div>
             </div>
-            </div>
-
+          
           </div>
 
-          <div class="col-12 col-md-4">
-
+          <div class="col-12 col-md-4 mt-6 mt-md-9" data-aos="fade-up" data-aos-delay="100">
+          
             <div class="card">
               <div class="card-body shadow-light rounded">
-            
-            <!-- Blockquote -->
-            <blockquote class="blockquote text-center">
-              
-              <!-- Text -->
-              <p class="mb-5 mb-md-7">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut sapien ex. Praesent quis maximus ex.”
-              </p>
-
-              <!-- Footer -->
-              <footer class="blockquote-footer mb-8 mb-md-0">
-                <div class="avatar avatar-xl mr-3">
-                  <img src="assets/img/avatars/avatar-5.jpg" class="avatar-img rounded-circle" alt="...">
-                </div> <span class="h6 text-uppercase">Bill Callan</span>
-              </footer>
-
-            </blockquote>
+          
+                <!-- Blockquote -->
+                <blockquote class="blockquote text-left">
+          
+                  <!-- Star-->
+                  <p>
+                    <i class="bi bi-star-fill text-warning"></i> <i class="bi bi-star-fill text-warning"></i> <i
+                      class="bi bi-star-fill text-warning"></i> <i class="bi bi-star-fill text-warning"></i> <i
+                      class="bi bi-star-half text-warning"></i>
+                  </p>
+          
+                  <!-- Text -->
+                  <p class="lead mb-5 mb-md-7">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut sapien ex. Praesent quis maximus ex.”
+                  </p>
+          
+                  <!-- Footer -->
+                  <footer class="blockquote-footer mb-8 mb-md-0 align-items-center d-flex">
+                    <div class="avatar avatar-xl mr-3">
+                      <img src="assets/img/avatars/avatar-1.jpg" class="avatar-img rounded-circle" alt="...">
+                    </div>
+                    <div>
+                      <div class="h6 text-uppercase font-weight-bold text-black">Doe John</div>
+                      <div class="small text-uppercase">Acme.inc</div>
+                    </div>
+                  </footer>
+          
+                </blockquote>
+              </div>
             </div>
-            </div>
+          
+          </div>
 
+          <div class="col-12 col-md-4 mt-6 mt-md-9">
+          
+            <div class="card">
+              <div class="card-body shadow-light rounded">
+          
+                <!-- Blockquote -->
+                <blockquote class="blockquote text-left">
+          
+                  <!-- Star-->
+                  <p>
+                    <i class="bi bi-star-fill text-warning"></i> <i class="bi bi-star-fill text-warning"></i> <i
+                      class="bi bi-star-fill text-warning"></i> <i class="bi bi-star-fill text-warning"></i> <i
+                      class="bi bi-star-fill text-warning"></i>
+                  </p>
+          
+                  <!-- Text -->
+                  <p class="lead mb-5 mb-md-7">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut sapien ex. Praesent quis maximus ex.”
+                  </p>
+          
+                  <!-- Footer -->
+                  <footer class="blockquote-footer mb-8 mb-md-0 align-items-center d-flex">
+                    <div class="avatar avatar-xl mr-3">
+                      <img src="assets/img/avatars/avatar-4.jpg" class="avatar-img rounded-circle" alt="...">
+                    </div>
+                    <div>
+                      <div class="h6 text-uppercase font-weight-bold text-black">Lala Muv</div>
+                      <div class="small text-uppercase">Acme.inc</div>
+                    </div>
+                  </footer>
+          
+                </blockquote>
+              </div>
+            </div>
+          
           </div>
 
 
         </div> <!-- / .row -->
+
+        <br>
+        <br>
+        <br>
+        <hr class="text-muted">
+
       </div> <!-- / .container -->
     </section>
 
@@ -2179,7 +2261,7 @@
         </div> <!-- / .row -->
         <br>
 
-        <hr>
+        <hr class="text-gray-400">
         <br>
 
         <div class="text-center">
