@@ -138,3 +138,7 @@ pre {
   border-color: black !important;
   border-left:    2px solid hsla(200, 10%, 50%,100);
 }
+
+.p-toc{
+  line-height: 1.4 !important;
+}
