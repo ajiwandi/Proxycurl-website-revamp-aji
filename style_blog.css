@@ -124,3 +124,17 @@ pre {
   max-width: 100%;
   height: auto;
 }
+
+.vr{ 
+  
+  border:         none;
+  border-color: #EEEEEE !important;
+  border-left:    2px solid hsla(200, 10%, 50%,100);
+}
+
+.vr-active{ 
+  
+  border:         none;
+  border-color: black !important;
+  border-left:    2px solid hsla(200, 10%, 50%,100);
+}
