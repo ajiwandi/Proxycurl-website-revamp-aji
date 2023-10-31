@@ -324,11 +324,11 @@
     ================================================== -->
     <section class="pt-8 pt-md-10 bg-light border-bottom">
 
-      <div class="container">
+      <div class="container mb-7 mb-md-10">
 
-        <div class="row justify-content-center mb-10" data-aos="fade-up">
+        <div class="row justify-content-center" data-aos="fade-up">
         
-          <div class="col-12 col-md-10 text-center mb-6 mb-md-8">
+          <div class="col-12 col-md-10 text-center mb-3 mb-md-8">
         
             <h1 class="display-2 font-weight-bold">
               <span class="text-primary">Reverse Email Lookup Demo</span>
@@ -361,19 +361,48 @@
 
       </div> <!-- container heading--> 
 
-      <div class="container-fluid bg-white pb-12">
+      <div class="container-fluid bg-white pb-8 border-top">
 
         <div class="row justify-content-center">
           <div class="col-12 col-md-6 text-center mb-6 mb-md-8">
         
-                <h1 class="font-weight-bold mt-n6 pt-2">
-                  <span class="badge badge-info shadow">Result</span>
-                </h1>
+                <h2 class="font-weight-bold mt-n5 mt-md-n6 pt-1 pt-md-2">
+                  <span class="badge badge-info badge-pill shadow px-5 py-2">Result</span>
+                </h2>
         
           </div>
         </div>
 
-      </div> <!-- container heading--> 
+        <div class="col-12 col-md-12 d-md-flex text-center justify-content-center">
+          <div class="row text-center justify-content-center">
+        
+            <div class="col-6 col-md-2 mb-5">
+              <i class="h1 neu neu-br-linkedin-sq text-primary"></i>
+              <p class="pt-4">Matched LinkedIn Profile URL?</p>
+            </div>
+            <div class="col-6 col-md-2 mb-5">
+              <i class="h1 neu neu-br-fb-sq text-primary"></i>
+              <p class="pt-4">Matched Facebook Profile URL?</p>
+            </div>
+            <div class="col-6 col-md-2">
+              <i class="h1 neu neu-br-twitter-sq text-muted"></i>
+              <p class="pt-4 text-muted">Matched Twitter Profile URL?</p>
+            </div>
+            <div class="col-6 col-md-3">
+              <i class="h1 neu neu-so-faq text-muted"></i>
+              <p class="pt-4 pb-0 text-muted">Unknown Result</p>
+              <div class="form-group mb-2">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="your@email.com" disabled>
+              </div>
+              <a class="btn btn-outline-secondary btn-block d-block d-md-inline-block disabled lift mr-1 mr-md-4" href="#!" aria-disabled="true" role="button">
+                Send Pending Result
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- container RESULT--> 
 
     </section>
 
@@ -696,26 +725,65 @@ curl \
 
       <div class="container">
   
-        <div class="row justify-content-center mb-md-8 md-8">
+        <div class="row justify-content-center mb-md-8 mb-6">
     
           <div class="col-12 col-md-8 col-lg-10">
     
             <h2 class="display-3 font-weight-bold mb-2 text-center">
-              Perform <span class="text-primary">Bulk Reverse Email Lookups in Google Sheets</span>
+              Perform <span class="text-success">Bulk Reverse Email Lookups in Google Sheets</span>
             </h2>
 
           </div>
             
         </div>
 
-        <img class="img img-fluid rounded mb-8" alt="Illustration" src="assets/img/illustrations/illustrationex2x1.png">
+        <div class="col-12 mb-md-9 mb-6">
+
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="assets/img/illustrations/lookup people and companies illustration.png" alt="look up people and companies illustration">
+              </div>
+
+              <div class="carousel-item">
+                <img class="d-block w-100" src="assets/img/illustrations/enrich profiles illustration.png" alt="enrich profiles illustration">
+              </div>
+
+              <div class="carousel-item">
+                <img class="d-block w-100" src="assets/img/illustrations/get contact details illustration.png" alt="get contact illustration">
+              </div>
+
+            </div>
+
+            <a href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <button class="flickity-button bg-success flickity-prev-next-button previous" type="button" aria-label="Previous">
+                <svg class="flickity-button-icon" viewBox="0 0 100 100">
+                  <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow">
+                  </path>
+                </svg>
+              </button>
+            </a>
+            
+            <a href="#carouselExampleIndicators" role="button" data-slide="next">
+              <button class="flickity-button bg-success flickity-prev-next-button next" type="button" aria-label="Previous">
+                <svg class="flickity-button-icon" viewBox="0 0 100 100">
+                  <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow">
+                  </path>
+                </svg>
+              </button>
+            </a>
+
+          </div>
+
+        </div>
 
         <div class="row justify-content-center">
           <div class="col-12 col-md-8 col-lg-9">
         
-            <p class="font-size-lg text-center text-gray-700" data-aos="fade-up">
+            <p class="font-size-lg font-weight-bold text-center text-muted" data-aos="fade-up">
               Not a developer? Not to worry, you can perform the same reverse email lookup on Google Sheets with <a
-                href="https://sapiengraph.com/" target="_blank" class="text-primary">Sapiengraph<i class="neu-arrow"></i></a>.
+                href="https://sapiengraph.com/" target="_blank" class="text-success">Sapiengraph<i class="neu-arrow"></i></a>.
             </p>
           </div>
         </div>
@@ -764,7 +832,7 @@ curl \
 
     <!-- PRICING
     ================================================== -->
-    <section class="mt-n8 mt-md-n14 pb-12">
+    <section class="mt-n8 mt-md-n14 pb-9 pb-md-11 border-bottom">
       <div class="container">
         <div class="row justify-content-center">
 
