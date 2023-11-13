@@ -344,39 +344,15 @@
           <img class="img img-fluid rounded" alt="Illustration"
             src="assets/img/illustrations/Reverse-email-lookup-demo-1_1.png">
         
-          <div class="col-12 col-md-6 text-center mb-6 mb-md-9 mt-md-n4">
-
-            <div class="highlight-block mt-3 mb-6 text-left">
-
-              <!-- Controls -->
-              <div class="d-flex">
-                <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
-                <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-              </div>               
-
-              <pre>
-                <code class="language-python">
-curl \
-    -G \
-    -H "Authorization: Bearer ${YOUR_API_KEY}" \
-    'https://nubela.co/proxycurl/api/linkedin/profile/resolve/email' \
-    --data-urlencode 'lookup_depth=deep' \
-    --data-urlencode 'email=<span class="text-warning">danial@nubela.co</span>' \
-    --data-urlencode 'enrich_profile=enrich' 
-  </code></pre>
-            </div>
-
+          <div class="col-12 col-md-6 text-center mb-6 mb-md-9">
+        
             <div class="form-group">
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                 placeholder="work@email.com">
             </div>
         
             <a class="btn btn-primary btn-block d-block d-md-inline-block lift mr-1 mr-md-4" href="#!">
-              Get API Key With Trial Credits
-            </a>
-            <a class="btn btn-primary-soft btn-block d-block d-md-inline-block lift mr-1 mr-md-4" href="https://nubela.co/proxycurl/docs#contact-api-reverse-email-lookup-endpoint">
-              See Reverse Email Lookup API Docs
+              Identify Social Media Profiles
             </a>
         
           </div>
@@ -397,10 +373,10 @@ curl \
           </div>
         </div>
 
-        <div class="col-12 col-md-12 d-md-flex text-center justify-content-center">
+        <div class="col-12 col-md-12 px-xl-14 d-md-flex text-center justify-content-center">
           <div class="row text-center justify-content-center">
         
-            <div class="col-6 col-md-2 mb-5">
+            <div class="col-6 col-lg-2 mb-5">
               <div class="row justify-content-center">
                 <div class="ml-1">
                   <i class="display-3 neu neu-br-linkedin-sq text-muted"></i>
@@ -409,7 +385,7 @@ curl \
               </div>
               <p class="pt-4 text-muted">Matched LinkedIn Profile URL?</p>
             </div>
-            <div class="col-6 col-md-2 mb-5">
+            <div class="col-6 col-lg-2 mb-5">
               <div class="row justify-content-center">
                 <div class="ml-1">
                   <i class="display-3 neu neu-br-fb-sq text-muted"></i>
@@ -418,7 +394,7 @@ curl \
               </div>
               <p class="pt-4 text-muted">Matched Facebook Profile URL?</p>
             </div>
-            <div class="col-6 col-md-2">
+            <div class="col-6 col-lg-2">
               <div class="row justify-content-center">
                 <div class="ml-1">
                   <i class="display-3 neu neu-br-twitter-sq text-muted"></i>
@@ -427,20 +403,36 @@ curl \
               </div>
               <p class="pt-4 text-muted">Matched Twitter Profile URL?</p>
             </div>
-            <div class="col-6 col-md-3">
+            <div class="col-6 col-lg-3">
               <div class="row justify-content-center">
                 <div class="ml-0">
                   <i class="display-3 neu neu-so-menu text-primary"></i>
                 </div>
                 <div class="ml-n5 mt-n2"><i class="ml-n1 h3 neu neu-so-faq text-success"></i></div>
               </div>
-              <p class="pt-4 pb-0">The result is pending and will be sent to your email.</p>
-              <div class="form-group mb-2">
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                  placeholder="your@email.com">
+              <p class="pt-4 pb-0">Unknown Result</p>
+              <div class="highlight-block mt-3 mb-4 text-left">
+
+                <!-- Controls -->
+                <div class="d-flex">
+                  <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                </div>               
+  
+                <pre style="max-height: 115px;">
+                  <code class="language-python">
+curl \
+    -G \
+    -H "Authorization: Bearer ${YOUR_API_KEY}" \
+    'https://nubela.co/proxycurl/api/linkedin/profile/resolve/email' \
+    --data-urlencode 'lookup_depth=deep' \
+    --data-urlencode 'email=<span class="text-warning">danial@nubela.co</span>' \
+    --data-urlencode 'enrich_profile=enrich' 
+    </code></pre>
               </div>
               <a class="btn btn-outline-primary btn-block d-block d-md-inline-block lift mr-1 mr-md-4" href="#!" aria-disabled="true" role="button">
-                Send Pending Result
+                Get API Key With Trial Credits
               </a>
             </div>
           </div>
