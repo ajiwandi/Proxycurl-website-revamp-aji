@@ -361,7 +361,10 @@
 
       </div> <!-- container heading--> 
 
-      <div class="container-fluid bg-white pb-8 border-top">
+    </section>
+
+    <section class="bg-white pb-8 pb-md-10">
+      <div class="container">
 
         <div class="row justify-content-center">
           <div class="col-12 col-md-6 text-center mb-6 mb-md-8">
@@ -373,70 +376,71 @@
           </div>
         </div>
 
-        <div class="col-12 col-md-12 px-xl-14 d-md-flex text-center justify-content-center">
-          <div class="row text-center justify-content-center">
-        
-            <div class="col-6 col-lg-2 mb-5">
-              <div class="row justify-content-center">
-                <div class="ml-1">
-                  <i class="display-3 neu neu-br-linkedin-sq text-muted"></i>
-                </div>
-                <div class="ml-n5 mt-n2"><i class="h3 neu neu-so-close-circle text-danger"></i></div>
+        <div class="row text-center justify-content-center">
+      
+          <div class="col-6 col-lg-2 mb-5">
+            <div class="row justify-content-center">
+              <div class="ml-1">
+                <i class="display-3 neu neu-br-linkedin-sq text-muted"></i>
               </div>
-              <p class="pt-4 text-muted">Matched LinkedIn Profile URL?</p>
+              <div class="ml-n5 mt-n2"><i class="h3 neu neu-so-close-circle text-danger"></i></div>
             </div>
-            <div class="col-6 col-lg-2 mb-5">
-              <div class="row justify-content-center">
-                <div class="ml-1">
-                  <i class="display-3 neu neu-br-fb-sq text-muted"></i>
-                </div>
-                <div class="ml-n5 mt-n2"><i class="h3 neu neu-so-close-circle text-danger"></i></div>
+            <p class="pt-4 text-muted">Matched LinkedIn Profile URL?</p>
+          </div>
+          <div class="col-6 col-lg-2 mb-5">
+            <div class="row justify-content-center">
+              <div class="ml-1">
+                <i class="display-3 neu neu-br-fb-sq text-muted"></i>
               </div>
-              <p class="pt-4 text-muted">Matched Facebook Profile URL?</p>
+              <div class="ml-n5 mt-n2"><i class="h3 neu neu-so-close-circle text-danger"></i></div>
             </div>
-            <div class="col-6 col-lg-2">
-              <div class="row justify-content-center">
-                <div class="ml-1">
-                  <i class="display-3 neu neu-br-twitter-sq text-muted"></i>
-                </div>
-                <div class="ml-n5 mt-n2"><i class="h3 neu neu-so-close-circle text-danger"></i></div>
+            <p class="pt-4 text-muted">Matched Facebook Profile URL?</p>
+          </div>
+          <div class="col-6 col-lg-2">
+            <div class="row justify-content-center">
+              <div class="ml-1">
+                <i class="display-3 neu neu-br-twitter-sq text-muted"></i>
               </div>
-              <p class="pt-4 text-muted">Matched Twitter Profile URL?</p>
+              <div class="ml-n5 mt-n2"><i class="h3 neu neu-so-close-circle text-danger"></i></div>
             </div>
-            <div class="col-6 col-lg-3">
-              <div class="row justify-content-center">
-                <div class="ml-0">
-                  <i class="display-3 neu neu-so-menu text-primary"></i>
-                </div>
-                <div class="ml-n5 mt-n2"><i class="ml-n1 h3 neu neu-so-faq text-success"></i></div>
+            <p class="pt-4 text-muted">Matched Twitter Profile URL?</p>
+          </div>
+          <div class="col-6 col-lg-2">
+            <div class="row justify-content-center">
+              <div class="ml-0">
+                <i class="display-3 neu neu-so-menu text-primary"></i>
               </div>
-              <p class="pt-4 pb-0">Unknown Result</p>
-              <div class="highlight-block mt-3 mb-4 text-left">
+              <div class="ml-n5 mt-n2"><i class="ml-n1 h3 neu neu-so-faq text-success"></i></div>
+            </div>
+            <p class="pt-4 pb-0">Unknown Result</p>
+          </div>
 
-                <!-- Controls -->
-                <div class="d-flex">
-                  <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
-                  <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                  <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                </div>               
-  
-                <pre style="max-height: 115px;">
-                  <code class="language-python">
+          <div class="col-12">
+            <div class="highlight-block mt-3 mb-4 text-left">
+
+              <!-- Controls -->
+              <div class="d-flex">
+                <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+              </div>               
+
+              <pre>
+                <code class="language-python">
 curl \
-    -G \
-    -H "Authorization: Bearer ${YOUR_API_KEY}" \
-    'https://nubela.co/proxycurl/api/linkedin/profile/resolve/email' \
-    --data-urlencode 'lookup_depth=deep' \
-    --data-urlencode 'email=<span class="text-warning">danial@nubela.co</span>' \
-    --data-urlencode 'enrich_profile=enrich' 
-    </code></pre>
-              </div>
-              <a class="btn btn-outline-primary btn-block d-block d-md-inline-block lift mr-1 mr-md-4" href="#!" aria-disabled="true" role="button">
-                Get API Key With Trial Credits
-              </a>
+  -G \
+  -H "Authorization: Bearer ${YOUR_API_KEY}" \
+  'https://nubela.co/proxycurl/api/linkedin/profile/resolve/email' \
+  --data-urlencode 'lookup_depth=deep' \
+  --data-urlencode 'email=<span class="text-warning">danial@nubela.co</span>' \
+  --data-urlencode 'enrich_profile=enrich' </code></pre>
             </div>
+            <a class="btn btn-outline-primary btn-block d-block d-md-inline-block lift mr-1 mr-md-4" href="#!" aria-disabled="true" role="button">
+              Get API Key With Trial Credits
+            </a>
           </div>
         </div>
+
 
       </div> <!-- container RESULT--> 
 
