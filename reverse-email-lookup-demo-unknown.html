@@ -414,8 +414,10 @@
             </div>
             <p class="pt-4 pb-0">Unknown Result</p>
           </div>
+        </div>
 
-          <div class="col-12">
+        <div class="row text-center justify-content-center">
+          <div class="col-12 col-md-8 mb-md-5">
             <div class="highlight-block mt-3 mb-4 text-left">
 
               <!-- Controls -->
@@ -435,7 +437,20 @@ curl \
   --data-urlencode 'email=<span class="text-warning">danial@nubela.co</span>' \
   --data-urlencode 'enrich_profile=enrich' </code></pre>
             </div>
-            <a class="btn btn-outline-primary btn-block d-block d-md-inline-block lift mr-1 mr-md-4" href="#!" aria-disabled="true" role="button">
+          </div>
+        </div>
+        <div class="row text-center justify-content-center">  
+          <div class="col-12 col-md-4 text-center">  
+            <div class="form-group mb-4">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="your@email.com">
+            </div>
+
+            <!-- captcha sample-->
+            <div class="g-recaptcha mb-4 d-inline-block" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+            style="transform-origin: 0 0;"></div>
+
+            <a class="btn btn-primary btn-block d-block d-md-inline-block lift mr-1 mr-md-4" href="#!" aria-disabled="true" role="button">
               Get Result in your Email
             </a>
           </div>
@@ -1599,6 +1614,7 @@ curl \
     <script src="./assets/libs/quill/dist/quill.min.js"></script>
     <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
     <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 
     <!-- Map -->
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
