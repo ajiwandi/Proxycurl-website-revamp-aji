@@ -535,8 +535,8 @@ curl \
     -G \
     -H "Authorization: Bearer ${YOUR_API_KEY}" \
     'https://nubela.co/proxycurl/api/customers' \
-    --data-urlencode 'linkedin_company_profile_url=https://www.linkedin.com/company/apple' \
-    --data-urlencode 'twitter_profile_url=https://x.com/apple' \
+    --data-urlencode 'linkedin_company_profile_url=https://www.linkedin.com/company/clearbit' \
+    --data-urlencode 'twitter_profile_url=https://x.com/clearbit' \
     --data-urlencode 'page_size=10'
                                   </code></pre>
     
@@ -691,8 +691,23 @@ curl \
     "companies": [
         {
             "email": "hello@example.com",
-            "linkedin_company_profile_url": "https://www.linkedin.com/company/apple",
-            "twitter_profile_url": "https://twitter.com/apple"
+            "linkedin_company_profile_url": "https://www.linkedin.com/company/segment-io",
+            "twitter_profile_url": "https://twitter.com/segment"
+        },
+        {
+          "email": "hello@example.com",
+          "linkedin_company_profile_url": "https://www.linkedin.com/company/asana",
+          "twitter_profile_url": "https://twitter.com/asana"
+        },        
+        {
+          "email": "hello@example.com",
+          "linkedin_company_profile_url": "https://www.linkedin.com/company/intercom",
+          "twitter_profile_url": "https://twitter.com/segment"
+        },
+        {
+          "email": "hello@example.com",
+          "linkedin_company_profile_url": "https://www.linkedin.com/company/zenefits",
+          "twitter_profile_url": "https://twitter.com/zenefits"
         }
     ]
 }                           
