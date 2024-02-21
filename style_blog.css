@@ -61,7 +61,8 @@ table tr:last-child td:last-child {
 }
 
 .font-weight-black{
-  font-weight: 900 !important;
+  font-weight: bolder !important;
+  font-family: Arial, Helvetica, sans-serif !important;
 }
 
 .text-python{
@@ -142,3 +143,4 @@ pre {
 .p-toc{
   line-height: 1.4 !important;
 }
+
