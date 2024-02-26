@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
   <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
   <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
+  <link rel="stylesheet" href="./style.css" />
 
   <!-- Map -->
   <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
@@ -397,7 +398,7 @@
           <div class="row align-items-center pr-md-0 pr-lg-5">
 
             <!-- pricing -->
-            <div class="col-12 col-md-12 col-lg-8 mb-8 mb-md-0 pr-md-6">
+            <div class="col-12 col-md-12 col-lg-9 mb-8 mb-md-0 pr-md-6">
 
               <!-- Nav-->
               <nav class="pb-md-6 pb-4">
@@ -428,7 +429,7 @@
                   aria-labelledby="nav-subs-tab">
 
                   <!-- Toggle -->
-                  <div class="d-flex justify-content-center mb-4 mb-md-6">
+                  <div class="d-flex justify-content-center ml-12 mb-4 mb-md-6 mt-1">
 
                     <span class="text-opacity-80">
                       Monthly
@@ -439,10 +440,10 @@
                       <label class="custom-control-label" for="billingSwitch"></label>
                     </div>
 
-                    <span class="text-opacity-80">
-                      Annual
-                      <span class="badge badge-pill badge-warning ml-1">
-                        <span class="h6 font-weight-bold text-uppercase">+2 MONTHS FREE CREDITS</span>
+                    <span class="text-opacity-80 d-flex">
+                      <div class="">Annual</div>
+                      <span class="badge badge-pill badge-warning ml-2 px-4 text-left mt-n1">
+                        <span class="small font-weight-bold text-uppercase">+2 MONTHS FREE CREDITS <br>ALL 12+2 MONTHS CREDITS ISSUED IMMEDIATELY</span>
                       </span>
                     </span>
       
@@ -452,46 +453,72 @@
                     <tbody>
 
                       <tr class="clickable table-primary" onclick="window.location='#!'">
+                        <td class="col-1 pr-9 font-weight-bold">
+                          Starter
+                        </td>
                         <td class="col-5 font-weight-bold">
-                          <span class="price mb-0" data-annual="2500" data-monthly="30000">30000 + 5000</span>
+                          <span class="price mb-0" data-annual="2500" data-monthly="30000">35,000</span>
                           credits
                         </td>
-                        <td class="col-5 text-gray-700">0.049/credit</td>
-                        <td class="col-2 text-right pr-9 font-weight-bold">
-                          $<span class="price mb-0" data-annual="49" data-monthly="490">490</span>
+                        <td class="col-4 text-gray-700">$0.017/credit</td>
+                        <td class="col-3 text-right pr-9 font-weight-bold">
+                          $<span class="price mb-0" data-annual="49" data-monthly="588">588/yr</span>
                         </td>
                       </tr>
 
                       <tr class="clickable" onclick="window.location='#!'">
+                        <td class="pr-9 font-weight-bold">
+                          Growth
+                        </td>
                         <td class="font-weight-bold">
-                          <span class="price mb-0" data-annual="25000" data-monthly="300000">300000 + 50000</span>
+                          <span class="price mb-0" data-annual="25000" data-monthly="350000">350,000</span>
                           credits
                         </td>
-                        <td class="text-gray-700">0.04/credit</td>
+                        <td class="text-gray-700">$0.010/credit</td>
                         <td class="text-right pr-9 font-weight-bold">
-                          $<span class="price mb-0" data-annual="299" data-monthly="2990">2900</span>
+                          $<span class="price mb-0" data-annual="299" data-monthly="3588">3,588/yr</span>
                         </td>
                       </tr>
 
                       <tr class="clickable" onclick="window.location='#!'">
+                        <td class="pr-9 font-weight-bold">
+                          Pro
+                        </td>
                         <td class="font-weight-bold">
-                          <span class="price mb-0" data-annual="89900" data-monthly="1078800">1078800 + 179800</span>
+                          <span class="price mb-0" data-annual="89900" data-monthly="1258600">1,258,600</span>
                           credits
                         </td>
-                        <td class="text-gray-700">0.3/credit</td>
+                        <td class="text-gray-700">$0.09/credit</td>
                         <td class="text-right pr-9 font-weight-bold">
-                          $<span class="price mb-0" data-annual="899" data-monthly="8990">8990</span>
+                          $<span class="price mb-0" data-annual="899" data-monthly="10788">10,788/yr</span>
                         </td>
                       </tr>
 
                       <tr class="clickable" onclick="window.location='#!'">
+                        <td class="pr-9 font-weight-bold">
+                          Ultra
+                        </td>
                         <td class="font-weight-bold">
-                          <span class="price mb-0" data-annual="211000" data-monthly="2532000">2532000 + 422000</span>
+                          <span class="price mb-0" data-annual="211000" data-monthly="2954000">2,954,000</span>
                           credits
                         </td>
-                        <td class="text-gray-700">0.02/credit</td>
+                        <td class="text-gray-700">$0.008/credit</td>
                         <td class="text-right pr-9 font-weight-bold">
-                          $<span class="price mb-0" data-annual="1899" data-monthly="18990">18990</span>
+                          $<span class="price mb-0" data-annual="1899" data-monthly="22788">22,788/yr</span>
+                        </td>
+                      </tr>
+
+                      <tr class="clickable" onclick="window.location='#!'">
+                        <td class="pr-9 font-weight-bold vertical-align-middle">
+                          Enterprise
+                        </td>
+                        <td class="font-weight-bold vertical-align-middle">
+                          <span class="price mb-0" data-annual="211000" data-monthly="2954000"> > 2,954,000</span>
+                          credits
+                        </td>
+                        <td class="text-gray-700 vertical-align-middle"> < $0.008/credit</td>
+                        <td class="text-right pr-9 font-weight-bold vertical-align-middle">
+                         <span class="small text-gray-700">Starts from</span> $<span class="price mb-0" data-annual="1899" data-monthly="24000">24,000/yr</span>
                         </td>
                       </tr>
 
@@ -542,29 +569,30 @@
             </div>
 
             <!-- right card info -->
-            <div class="col-12 col-md-12 col-lg-4 text-center py-lg-9 px-lg-6 pt-6 pb-0 shadow-light bg-white rounded border border-primary" id="nav-tabContent">
+            <div class="col-12 col-md-12 col-lg-3 text-center py-lg-12 px-lg-6 pt-6 pb-0 shadow-light bg-white rounded border border-primary" id="nav-tabContent">
 
               <div class="tab-pane fade show active" id="nav-payg" role="tabpanel" aria-labelledby="nav-payg-tab">
 
               <span class="badge badge-pill badge-primary-soft mb-6">
-                <span class="h6 text-uppercase">Pay-as-you-go</span>
+                <span class="h6 text-uppercase">Starter</span>
               </span>
 
               <div class="d-flex justify-content-center pb-4">
-                <span class="h2 mb-0 mt-2">$</span>
-                <span class="display-2 font-weight-bold">49</span>
+                <span class="h3 mb-0 mt-2">$</span>
+                <span class="display-3 font-weight-bold">588</span>
+                 <span class="h3 align-self-end mb-1">/year</span>
               </div>
 
               <p class="mb-0 font-weight-bold">
-                600 credits
+                35,000 credits
               </p>
 
               <p class="mb-3 text-gray-700 small font-weight-bold">
-                0.8166/credit
+                $0.17/credit
               </p>
 
               <p class="mb-6 small text-muted">
-                Credits do not expire*
+                12+2 months credits issued immediately, expire in a year
               </p>
 
               <a href="#!" class="btn btn-sm btn-block btn-primary mb-5 mb-lg-0">

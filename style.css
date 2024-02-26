@@ -221,3 +221,7 @@ ul.timeline > li.hlight:before {
     height: 20px;
     z-index: 400;
 }
+
+.vertical-align-middle {
+  vertical-align: middle !important;
+}
