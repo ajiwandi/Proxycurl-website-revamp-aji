@@ -225,3 +225,7 @@ ul.timeline > li.hlight:before {
 .vertical-align-middle {
   vertical-align: middle !important;
 }
+
+td.small-padding {
+  padding-right: 1rem !important;
+}
