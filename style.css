@@ -227,5 +227,11 @@ ul.timeline > li.hlight:before {
 }
 
 td.small-padding {
-  padding-right: 1rem !important;
+  padding-right: 0.1rem !important;
+}
+
+@media (min-width: 1200px) {
+  .td-xl-nowrap td {
+      white-space: nowrap !important;
+  }
 }
