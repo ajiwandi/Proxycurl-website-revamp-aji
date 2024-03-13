@@ -25,7 +25,7 @@
   <!-- Theme CSS -->
   <link rel="stylesheet" href="./assets/css/theme.min.css">
 
-  <title>Pricing Tiers PAYG - Proxycurl API</title>
+  <title>Pricing Tiers - Proxycurl API</title>
 
 </head>
 
@@ -366,10 +366,12 @@
             <!-- Text -->
             <p class="lead text-white-80 mb-6 mb-md-4">
               We have pricing plans for every level of usage.
-            <p class="small text-white-80">The Monthly and Annual subscription plans are for businesses with predictable use of
-              credits. Credits purchased via subscriptions are priced at a lower rate and expire at the end of every month/year. The
-              best pricing requires commitment and volume. Our Pay-as-you-go credits are perfect for casual API users because they
-              do not expire*, however they cost more.</p>
+            <h6 class="text-white-80">Our Pay-as-you-go credits are perfect for casual API users
+              because they do not expire and cost more.
+              Our subscription plans are for businesses with predictable use of credits.
+              Credits purchased via subscription are priced at a lower rate,
+              but they expire at the end of every billing cycle. The best pricing requires
+              commitment and volume.</h6>
             </p>
   
           </div>
@@ -402,14 +404,14 @@
               <nav class="pb-md-6 pb-4">
                 <div class="nav nav-pills nav-fill flex-column flex-sm-row" id="nav-tab" role="tablist">
                  
-                  <a class="lead font-weight-bold nav-item nav-link" id="nav-subs-tab" data-toggle="tab"
+                  <a class="lead font-weight-bold nav-item nav-link active" id="nav-subs-tab" data-toggle="tab"
                     href="#nav-subs" role="tab" aria-controls="nav-subs" aria-selected="false">Subscription
                     <p class="h6">
-                      Credits expire every billing month/year
+                      Credits expire every billing period
                     </p>
                   </a>
 
-                  <a class="lead font-weight-bold nav-item nav-link active" id="nav-payg-tab" data-toggle="tab"
+                  <a class="lead font-weight-bold nav-item nav-link" id="nav-payg-tab" data-toggle="tab"
                     href="#nav-payg" role="tab" aria-controls="nav-payg" aria-selected="true">
                     Pay-as-you-go
                     <p class="h6">
@@ -423,38 +425,50 @@
               <div class="tab-content" id="nav-tabContent">
 
                 <!-- Subscription-->
-                <div class="table-responsive-md tab-pane fade " id="nav-subs" role="tabpanel"
+                <div class="table-responsive-md tab-pane fade show active" id="nav-subs" role="tabpanel"
                   aria-labelledby="nav-subs-tab">
 
                   <!-- Toggle -->
-                  <div class="row justify-content-md-center mb-6 mb-md-6 mt-1">                                    
-                    <div class="d-flex ml-5 ml-md-10 ml-lg-13">
+                  <div class="row justify-content-md-center mb-6 mb-md-7 mt-4">
+                                    
+                    <div class="d-flex">
                   
-                      <span class="text-opacity-80 text-nowrap">
-                        Pay monthly
-                      </span>
+                      <div class="text-right">
+                        <div class="text-opacity-80 text-nowrap text-uppercase font-weight-bold">
+                          Pay monthly
+                        </div>
+                        <div class="badge badge-info-soft badge-pill py-2 mt-2">
+                          <span class="h6 font-weight-bold">12-month contract, paid monthly</span>
+                        </div>
+                      </div>
                   
                       <div class="custom-control custom-switch mx-3">
                         <input type="checkbox" class="custom-control-input" id="billingSwitch" data-toggle="price" data-target=".price"
                           checked>
                         <label class="custom-control-label" for="billingSwitch"></label>
                       </div>
-                  
-                      <span class="text-opacity-80 d-flex ml-n2 text-nowrap">
-                        <div class="">Pay annually</div>
-                        <span class="badge badge-pill badge-warning ml-3 text-left small font-weight-bold text-uppercase mt-0 py-2 pr-4"
-                          data-toggle="tooltip" data-placement="bottom"
-                          title="All 12+2 months credits issued at one go upon subscription of an Annual Plan"><i class="neu neu-info"></i> +2 MONTHS FREE
-                          CREDITS</span>
-                      </span>
+
+                      <div class="text-left">
+                        <div class="text-opacity-80 text-nowrap text-uppercase font-weight-bold">
+                          Pay annualy
+                        </div>
+                        <div class="">
+                        <div class="badge badge-pill badge-secondary-soft text-left small font-weight-bold text-uppercase mt-2 py-2 pr-4"
+                        data-toggle="tooltip" data-placement="bottom"
+                        title="All 12+2 months credits issued at one go upon subscription"><i class="neu neu-info"></i> +2 MONTHS FREE
+                        CREDITS</div>
+                        </div>
+                        <div class="badge badge-secondary-soft badge-pill py-2 mt-2">
+                          <span class="h6 font-weight-bold">12-month contract, paid annually</span>
+                        </div>
+
+                      </div>
                   
                     </div>
-                  
-                    <div class="small ml-5 ml-md-0 mr-0 mr-md-12 mr-lg-8 mt-3 badge badge-info-soft badge-pill py-2">
-                      12-month contract, paid annually
-                    </div>
+                
                   
                   </div>
+                  
 
                   <table class="table bg-light table-hover">
                     <tbody>
@@ -540,7 +554,7 @@
                 </div>
 
                 <!-- PAYG-->
-                <div class="table-responsive tab-pane fade show active" id="nav-payg" role="tabpanel"
+                <div class="table-responsive tab-pane fade" id="nav-payg" role="tabpanel"
                   aria-labelledby="nav-payasyougo-tab">
 
                   <table class="table bg-light table-hover">
@@ -581,29 +595,34 @@
             </div>
 
             <!-- right card info -->
-            <div class="col-12 col-md-12 col-lg-3 text-center py-lg-11 px-lg-6 pt-6 pb-0 shadow-light bg-white rounded border border-primary" id="nav-tabContent">
+            <div class="col-12 col-md-12 col-lg-3 text-center py-lg-11 pt-6 pb-0 shadow-light bg-white rounded border border-primary" id="nav-tabContent">
 
               <div class="tab-pane fade show active" id="nav-payg" role="tabpanel" aria-labelledby="nav-payg-tab">
 
               <span class="badge badge-pill badge-primary-soft mb-6">
-                <span class="h6 text-uppercase">Pay-As-You-Go</span>
+                <span class="h6 text-uppercase">Starter</span>
               </span>
 
               <div class="d-flex justify-content-center pb-4">
                 <span class="h3 mb-0 mt-2">$</span>
-                <span class="display-3 font-weight-bold">50</span>
+                <span class="display-3 font-weight-bold">588</span>
+                 <span class="h3 align-self-end mb-1">/yr</span>
               </div>
 
               <p class="mb-0 font-weight-bold">
-                834 credits
+                35,000 credits
               </p>
 
-              <p class="mb-3 text-gray-700 small font-weight-bold">
-                $0.06/credit
+              <p class="mb-4 text-gray-700 small font-weight-bold">
+                $0.17/credit
+              </p>
+
+              <p class="mb-4 small text-muted">
+                <span class=" badge badge-info-soft badge-pill py-2">12-month contract, paid annually</span>
               </p>
 
               <p class="mb-6 small text-muted">
-                Credits do not expire*
+                12+2 months credits issued immediately, expire in a year
               </p>
 
               <a href="#!" class="btn btn-sm btn-block btn-primary mb-5 mb-lg-0">
